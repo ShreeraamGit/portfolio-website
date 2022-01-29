@@ -13,17 +13,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body class="bg-main-bg font-main-font">
+    <body class="bg-main-bg font-main-font w-full h-full m-0">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <main>
-            <section class="section-header">
+        <main class="container min-w-full min-h-full">
+            <section class="section-header border-2 border-black">
                 <header>
-                    <nav></nav>
-                    <section>
-                        <aside></aside>
-                        <article></article>
+                    <nav class="nav flex flex-row justify-end px-12">
+                        <div class="nav__logo w-fit h-fit mr-auto" id="logo">
+                            <img class="w-20 h-20" src="/images/logo.svg" alt="logo">
+                        </div>
+                        <ul class="nav__links w-3/5 h-fit flex flex-row justify-around self-center text-lg text-heading">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">01.About</a>
+                            </li>
+                            <li class="nav__links">
+                                <a class="nav__link" href="#">02.Experience</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">03.Projects</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">04.Resume</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="about-content mt-14 px-12 flex flex-row justify-around">
+                        <aside class="border-2 border-box w-1/4 h-fit">
+                            <h1>Animation Box</h1>
+                        </aside>
+                        <article class="w-3/5 border-2">
+                            <p class="text-lg font-light">Hi, My name is,</p>
+                            <h1 class="text-5xl mt-5">Shreeraam Sethuraj,</h1>
+                            <p class="text-lg antialiased font-normal text-justify mt-5">I am a <span class="underline decoration-wavy hover:decoration-heading cursor-pointer decoration-2">FrontEnd developer</span> who loves to build things which live in web with exceptional digital experiences. 
+                                Currently I live in France, searching for new challenges in the field i am passionate about.</p>
+                            <p class="text-lg mt-10 font-light">Learn More</p>
+                        </article>
                     </section>
                 </header>
             </section>
@@ -38,7 +64,12 @@
                 <div class="exp_content"></div>
             </section>
             <section class="projects">
-                
+                <article class="project_content">
+                    <div class=""></div>
+                </article>
+            </section>
+            <section class="section-contact">
+                <article></article>
             </section>
         </main>
         <script src="app.js" async defer></script>
