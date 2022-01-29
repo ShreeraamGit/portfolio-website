@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
 /*
 ! tailwindcss v3.0.17 | MIT License | https://tailwindcss.com
 */
@@ -423,7 +425,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -468,21 +470,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#50d71e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(80 215 30 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F7FFF7\] {
+.bg-main-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(247 255 247 / var(--tw-bg-opacity));
 }
 
-.text-center {
+.text-center{
   text-align: center;
+}
+
+.font-main-font{
+  font-family: Sora;
 }
