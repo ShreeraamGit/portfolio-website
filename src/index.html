@@ -20,11 +20,11 @@
         <main class="container min-w-full min-h-full">
             <section class="section-header border-2 border-black">
                 <header>
-                    <nav class="nav flex flex-row justify-end px-12">
+                    <nav class="nav flex flex-row justify-end px-6 lg:px-12">
                         <div class="nav__logo w-fit h-fit mr-auto" id="logo">
                             <img class="w-20 h-20" src="/images/logo.svg" alt="logo">
                         </div>
-                        <ul class="nav__links w-3/5 h-fit flex flex-row justify-around self-center text-lg text-heading">
+                        <ul class="nav__links invisible lg:visible w-3/5 h-fit flex flex-row justify-around self-center text-lg text-heading">
                             <li class="nav__item">
                                 <a class="nav__link" href="#">01.About</a>
                             </li>
@@ -38,17 +38,22 @@
                                 <a class="nav__link" href="#">04.Resume</a>
                             </li>
                         </ul>
+                        <div class="hamburger self-center sm:visible lg:invisible cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                              </svg>
+                        </div>
                     </nav>
-                    <section class="about-content mt-14 px-12 flex flex-row justify-around">
-                        <aside class="border-2 border-box w-1/4 h-fit">
+                    <section class="about-content mt-14 px-6 lg:px-12 flex flex-col lg:flex-row justify-around">
+                        <aside class="border-2 border-box w-full h-fit lg:w-1/4">
                             <h1>Animation Box</h1>
                         </aside>
-                        <article class="w-3/5 border-2">
+                        <article class="w-full h-fit lg:w-3/5 border-2">
                             <p class="text-lg font-light text-heading">Hi, My name is,</p>
-                            <h1 class="text-5xl mt-5">Shreeraam Sethuraj,</h1>
+                            <h1 class="text-4xl lg:text-5xl mt-5">Shreeraam Sethuraj,</h1>
                             <p class="text-content text-lg antialiased font-normal text-justify mt-5">I am a <span class="underline decoration-wavy hover:decoration-heading cursor-pointer decoration-2">FrontEnd developer</span> who loves to build things which live in web with exceptional digital experiences. 
                                 Currently I live in France, searching for new challenges in the field i am passionate about.</p>
-                            <p class="text-lg mt-10 font-light underline text-heading">Learn More ↓</p>
+                            <p class="text-lg mt-10 font-light underline text-heading cursor-pointer">Learn More ↓</p>
                         </article>
                     </section>
                 </header>
