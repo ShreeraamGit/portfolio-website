@@ -11,7 +11,7 @@ module.exports = {
       },
       fontFamily: {
         'main-font': ['Sora']
-      }
+      },
     },
   },
   plugins: [],
