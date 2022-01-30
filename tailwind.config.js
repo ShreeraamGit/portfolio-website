@@ -10,7 +10,8 @@ module.exports = {
         'aux-1':'#FFE66D'
       },
       fontFamily: {
-        'main-font': ['Sora']
+        'main-font': ['Sora'],
+        'logo-font': ['Yeseva One']
       },
     },
   },
