@@ -37,10 +37,15 @@
                             <a class="nav__link" href="#">04.Resume</a>
                         </li>
                     </ul>
-                    <div class="hamburger self-center sm:visible lg:invisible cursor-pointer">
+                    <div class="hamburger__open self-center visible lg:invisible cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
+                        </svg>
+                    </div>
+                    <div class="hamburger__close absolute self-center invisible lg:invisible cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </div>
                 </nav>
                 <section class="about-content mt-20 lg:mt-32">
