@@ -1,3 +1,5 @@
+//// Hamburger menu
+
 const hamburgerOpen = document.querySelector('.hamburger__open')
 const hamburgerClose = document.querySelector('.hamburger__close')
 const navLinks = document.querySelector('.nav__links')
