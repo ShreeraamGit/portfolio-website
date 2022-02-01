@@ -13,6 +13,9 @@ module.exports = {
         'main-font': ['Sora'],
         'logo-font': ['Yeseva One']
       },
+      backgroundImage: {
+        'hero-img': "url('/images/IMG_0075.JPG')",
+      }
     },
   },
   plugins: [],
