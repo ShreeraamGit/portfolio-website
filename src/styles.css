@@ -518,6 +518,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
+.relative{
+  position: relative;
+}
+
 .top-0{
   top: 0px;
 }
@@ -562,6 +566,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
+.mr-8{
+  margin-right: 2rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.mr-14{
+  margin-right: 3.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -588,6 +612,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .w-3\/5{
   width: 60%;
 }
@@ -608,6 +636,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 18rem;
 }
 
+.w-2\/6{
+  width: 33.333333%;
+}
+
 .w-2\/5{
   width: 40%;
 }
@@ -616,12 +648,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20%;
 }
 
-.w-2\/6{
-  width: 33.333333%;
+.w-3\/6{
+  width: 50%;
 }
 
 .table-fixed{
   table-layout: fixed;
+}
+
+.border-collapse{
+  border-collapse: collapse;
 }
 
 .-translate-y-3{
@@ -646,6 +682,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.list-inside{
+  list-style-position: inside;
+}
+
+.list-disc{
+  list-style-type: disc;
 }
 
 .flex-row{
@@ -688,6 +732,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -710,8 +766,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(247 255 247 / var(--tw-bg-opacity));
 }
 
+.bg-aux{
+  --tw-bg-opacity: 1;
+  background-color: rgb(78 205 196 / var(--tw-bg-opacity));
+}
+
+.bg-aux-1{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 230 109 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-6{
@@ -734,8 +808,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-justify{
   text-align: justify;
+}
+
+.indent-1{
+  text-indent: 0.25rem;
 }
 
 .font-main-font{
@@ -769,6 +851,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -848,8 +935,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 5rem;
   }
 
-  .lg\:h-screen{
-    height: 100vh;
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-3{
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mr-0{
+    margin-right: 0px;
+  }
+
+  .lg\:h-fit{
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .lg\:h-full{
@@ -860,10 +961,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 20rem;
   }
 
-  .lg\:h-fit{
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  .lg\:h-screen{
+    height: 100vh;
   }
 
   .lg\:w-2\/4{
@@ -886,8 +985,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 20rem;
   }
 
-  .lg\:w-6\/12{
+  .lg\:w-3\/5{
+    width: 60%;
+  }
+
+  .lg\:w-4\/6{
+    width: 66.666667%;
+  }
+
+  .lg\:w-3\/6{
     width: 50%;
+  }
+
+  .lg\:w-3\/12{
+    width: 25%;
+  }
+
+  .lg\:w-1\/5{
+    width: 20%;
   }
 
   .lg\:translate-x-11{
@@ -899,8 +1014,44 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+
+  .lg\:place-items-start{
+    place-items: start;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:justify-between{
+    justify-content: space-between;
+  }
+
+  .lg\:justify-items-start{
+    justify-items: start;
+  }
+
   .lg\:self-center{
     align-self: center;
+  }
+
+  .lg\:border-none{
+    border-style: none;
+  }
+
+  .lg\:bg-inherit{
+    background-color: inherit;
+  }
+
+  .lg\:bg-none{
+    background-image: none;
   }
 
   .lg\:p-0{
@@ -925,5 +1076,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
