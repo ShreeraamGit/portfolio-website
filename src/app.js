@@ -30,6 +30,11 @@ totalNavItems.addEventListener("mouseover", function (e) {
     others.forEach((element) => {
       if (element !== target) {
         element.classList.add("opacity-50");
+      } else {
+        const links = element.parentElement;
+        links.classList.add("underline");
+        links.classList.add("decoration-4");
+        links.classList.add("underline-offset-8");
       }
     });
   }
@@ -37,13 +42,15 @@ totalNavItems.addEventListener("mouseover", function (e) {
 totalNavItems.addEventListener("mouseout", function (e) {
   e.preventDefault();
   const target = e.target;
-  ///console.log(target);
   if (target.classList.contains("nav__link")) {
     const others = target.closest(".nav").querySelectorAll(".nav__link");
     ///console.log(others);
     others.forEach((element) => {
       if (element !== target) {
         element.classList.remove("opacity-50");
+      } else {
+        const links = element.parentElement;
+        links.classList.remove("underline");
       }
     });
   }
