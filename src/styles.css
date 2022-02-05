@@ -879,6 +879,21 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-color: #FF6B6B;
 }
 
+.decoration-content{
+  -webkit-text-decoration-color: #1A535C;
+          text-decoration-color: #1A535C;
+}
+
+.decoration-red-500{
+  -webkit-text-decoration-color: #ef4444;
+          text-decoration-color: #ef4444;
+}
+
+.decoration-yellow-700{
+  -webkit-text-decoration-color: #a16207;
+          text-decoration-color: #a16207;
+}
+
 .decoration-wavy{
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;

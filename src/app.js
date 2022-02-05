@@ -60,3 +60,4 @@ totalNavItems.addEventListener("mouseout", function (e) {
 });
 
 /*-----------------------------------------------------------------------------------------------*/
+///about me photo animation
