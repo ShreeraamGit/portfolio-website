@@ -586,6 +586,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 3.5rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .flex{
   display: flex;
 }
@@ -614,6 +618,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
 }
 
 .w-3\/5{
@@ -1095,6 +1103,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:border-b-0{
     border-bottom-width: 0px;
+  }
+
+  .lg\:border-l-2{
+    border-left-width: 2px;
   }
 
   .lg\:border-none{
