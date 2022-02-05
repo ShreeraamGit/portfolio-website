@@ -31,7 +31,8 @@ totalNavItems.addEventListener("mouseover", function (e) {
     ///console.log(others);
     others.forEach((element) => {
       if (element !== target) {
-        element.classList.add("transition-all");
+        element.classList.add("transition");
+        element.classList.add("duration-300");
         element.classList.add("opacity-50");
       } else {
         const links = element.parentElement;
@@ -50,6 +51,8 @@ totalNavItems.addEventListener("mouseout", function (e) {
     ///console.log(others);
     others.forEach((element) => {
       if (element !== target) {
+        element.classList.add("transition");
+        element.classList.add("duration-300");
         element.classList.remove("opacity-50");
       } else {
         const links = element.parentElement;
@@ -67,14 +70,18 @@ const box3 = document.querySelector(".box-2");
 
 box1.addEventListener("mouseover", function (e) {
   e.preventDefault();
-  box2.classList.add("transition-all");
+  box2.classList.add("transition");
+  box2.classList.add("duration-500");
   box2.classList.add("translate-x-2");
   box2.classList.add("translate-y-2");
   box1.classList.remove("bg-aux");
+  box1.classList.add("transition");
+  box1.classList.add("duration-500");
 });
 box1.addEventListener("mouseout", function (e) {
   e.preventDefault();
-  box2.classList.add("transition-all");
+  box2.classList.add("transition");
+  box2.classList.add("duration-500");
   box2.classList.remove("translate-x-2");
   box2.classList.remove("translate-y-2");
   box1.classList.add("bg-aux");
