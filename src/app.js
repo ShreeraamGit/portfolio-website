@@ -17,3 +17,34 @@ hamburgerClose.addEventListener("click", function (e) {
   hamburgerOpen.classList.remove("invisible");
   hamburgerOpen.classList.add("visible");
 });
+
+////hover states in nav bar implementation;
+const totalNavItems = document.querySelector(".nav");
+
+totalNavItems.addEventListener("mouseover", function (e) {
+  e.preventDefault();
+  const target = e.target;
+  if (target.classList.contains("nav__link")) {
+    const others = target.closest(".nav").querySelectorAll(".nav__link");
+    ///console.log(others);
+    others.forEach((element) => {
+      if (element !== target) {
+        element.classList.add("opacity-50");
+      }
+    });
+  }
+});
+totalNavItems.addEventListener("mouseout", function (e) {
+  e.preventDefault();
+  const target = e.target;
+  ///console.log(target);
+  if (target.classList.contains("nav__link")) {
+    const others = target.closest(".nav").querySelectorAll(".nav__link");
+    ///console.log(others);
+    others.forEach((element) => {
+      if (element !== target) {
+        element.classList.remove("opacity-50");
+      }
+    });
+  }
+});
