@@ -756,6 +756,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 2px;
 }
 
+.border-l-2{
+  border-left-width: 2px;
+}
+
+.border-l-4{
+  border-left-width: 4px;
+}
+
+.border-b-4{
+  border-bottom-width: 4px;
+}
+
 .border-content{
   --tw-border-opacity: 1;
   border-color: rgb(26 83 92 / var(--tw-border-opacity));
@@ -858,6 +870,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -890,6 +907,12 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-color: #FF6B6B;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .hover\:translate-y-2:hover{
   --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -906,8 +929,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 107 107 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-aux-1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 230 109 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-opacity-25:hover{
   --tw-bg-opacity: 0.25;
+}
+
+.hover\:text-heading:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 107 107 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .sm\:border-b-4{
+    border-bottom-width: 4px;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1042,6 +1081,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-self: center;
   }
 
+  .lg\:rounded-none{
+    border-radius: 0px;
+  }
+
+  .lg\:border-l-4{
+    border-left-width: 4px;
+  }
+
+  .lg\:border-b{
+    border-bottom-width: 1px;
+  }
+
+  .lg\:border-b-0{
+    border-bottom-width: 0px;
+  }
+
   .lg\:border-none{
     border-style: none;
   }
@@ -1081,5 +1136,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
