@@ -61,3 +61,21 @@ totalNavItems.addEventListener("mouseout", function (e) {
 
 /*-----------------------------------------------------------------------------------------------*/
 ///about me photo animation
+const box1 = document.querySelector(".box-3");
+const box2 = document.querySelector(".box-1");
+const box3 = document.querySelector(".box-2");
+
+box1.addEventListener("mouseover", function (e) {
+  e.preventDefault();
+  box2.classList.add("transition-all");
+  box2.classList.add("translate-x-2");
+  box2.classList.add("translate-y-2");
+  box1.classList.remove("bg-aux");
+});
+box1.addEventListener("mouseout", function (e) {
+  e.preventDefault();
+  box2.classList.add("transition-all");
+  box2.classList.remove("translate-x-2");
+  box2.classList.remove("translate-y-2");
+  box1.classList.add("bg-aux");
+});
