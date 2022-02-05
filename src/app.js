@@ -18,6 +18,8 @@ hamburgerClose.addEventListener("click", function (e) {
   hamburgerOpen.classList.add("visible");
 });
 
+/*------------------------------------------------------------------------------------------*/
+
 ////hover states in nav bar implementation;
 const totalNavItems = document.querySelector(".nav");
 
@@ -29,6 +31,7 @@ totalNavItems.addEventListener("mouseover", function (e) {
     ///console.log(others);
     others.forEach((element) => {
       if (element !== target) {
+        element.classList.add("transition-all");
         element.classList.add("opacity-50");
       } else {
         const links = element.parentElement;
@@ -55,3 +58,5 @@ totalNavItems.addEventListener("mouseout", function (e) {
     });
   }
 });
+
+/*-----------------------------------------------------------------------------------------------*/
