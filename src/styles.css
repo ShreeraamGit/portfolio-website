@@ -583,6 +583,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 6rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1019,6 +1023,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:bg-opacity-25:hover{
   --tw-bg-opacity: 0.25;
+}
+
+.hover\:bg-gradient-to-r:hover{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.hover\:text-heading:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 107 107 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px){
