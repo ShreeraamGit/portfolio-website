@@ -118,3 +118,7 @@ companiesBox.addEventListener("click", function (e) {
     });
   }
 });
+
+/* --------------------------------------------------------------------------------------------- */
+
+////:implementing sticky navigation bar after certain point

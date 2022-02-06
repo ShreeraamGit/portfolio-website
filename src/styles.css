@@ -522,6 +522,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .top-0{
   top: 0px;
 }
@@ -626,6 +631,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-3\/5{
   height: 60%;
+}
+
+.h-96{
+  height: 24rem;
+}
+
+.h-60{
+  height: 15rem;
+}
+
+.h-80{
+  height: 20rem;
 }
 
 .w-3\/5{
@@ -765,6 +782,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-content{
   --tw-border-opacity: 1;
   border-color: rgb(26 83 92 / var(--tw-border-opacity));
+}
+
+.border-heading{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 107 107 / var(--tw-border-opacity));
 }
 
 .bg-aux{
@@ -999,6 +1021,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:h-screen{
     height: 100vh;
+  }
+
+  .lg\:h-96{
+    height: 24rem;
   }
 
   .lg\:w-2\/4{
