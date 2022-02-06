@@ -971,6 +971,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.1em;
 }
 
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
+
 .text-content{
   --tw-text-opacity: 1;
   color: rgb(26 83 92 / var(--tw-text-opacity));
@@ -1015,6 +1019,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-40{
   opacity: 0.4;
+}
+
+.opacity-60{
+  opacity: 0.6;
+}
+
+.opacity-0{
+  opacity: 0;
+}
+
+.opacity-30{
+  opacity: 0.3;
 }
 
 .transition{
@@ -1209,6 +1225,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
+  .lg\:w-8\/12{
+    width: 66.666667%;
+  }
+
+  .lg\:w-screen{
+    width: 100vw;
+  }
+
   .lg\:translate-x-11{
     --tw-translate-x: 2.75rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1224,6 +1248,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:place-items-start{
     place-items: start;
+  }
+
+  .lg\:justify-end{
+    justify-content: flex-end;
   }
 
   .lg\:justify-center{

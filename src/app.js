@@ -34,7 +34,7 @@ totalNavItems.addEventListener("mouseover", function (e) {
       if (element !== target) {
         element.classList.add("transition");
         element.classList.add("duration-300");
-        element.classList.add("opacity-50");
+        element.classList.add("opacity-30");
       } else {
         const links = element.parentElement;
         links.classList.add("underline");
@@ -54,7 +54,7 @@ totalNavItems.addEventListener("mouseout", function (e) {
       if (element !== target) {
         element.classList.add("transition");
         element.classList.add("duration-300");
-        element.classList.remove("opacity-50");
+        element.classList.remove("opacity-30");
       } else {
         const links = element.parentElement;
         links.classList.remove("underline");
