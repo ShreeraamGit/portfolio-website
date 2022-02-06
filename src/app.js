@@ -97,15 +97,23 @@ companiesBox.addEventListener("click", function (e) {
   e.preventDefault();
   target = e.target;
   if (target.classList.contains("exp__comp")) {
+    ///console.log(target.dataset.tab);
     const others = target.closest(".exp-line").querySelectorAll(".exp");
-    const selectedExp = target.parentElement;
+    const selectedCompany = target.parentElement;
+    const expContent = document.querySelectorAll(".exp__content");
+    const jazeera = document.querySelector(".jazeera");
+    const kpas = document.querySelector(".kpas");
     others.forEach((element) => {
-      if (element === selectedExp) {
+      if (element === selectedCompany) {
         element.classList.add("lg:border-l-4");
         element.classList.add("border-b-4");
+        jazeera.classList.add("hidden");
+        kpas.classList.remove("hidden");
       } else {
         element.classList.remove("lg:border-l-4");
         element.classList.remove("border-b-4");
+        jazeera.classList.remove("hidden");
+        kpas.classList.add("hidden");
       }
     });
   }

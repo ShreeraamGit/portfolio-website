@@ -199,8 +199,8 @@
           </section>
         </article>
       </section>
-      <section class="section-exp h-fit lg:h-fit" id="section-2">
-        <article>
+      <section class="section-exp h-fit border lg:h-full" id="section-2">
+        <article class="">
           <header class="about_content mb-12 lg:mb-0">
             <div class="aboutme-header flex flex-row place-items-center">
               <h1 class="text-heading mb-6 mr-5 text-xl font-bold lg:text-2xl">
@@ -212,7 +212,7 @@
             </div>
           </header>
           <aside
-            class="exp_line mt-12 flex flex-col lg:flex-row lg:justify-center"
+            class="exp_line mt-12 flex h-3/5 flex-col border lg:flex-row lg:justify-center"
           >
             <div
               class="exp-line flex w-full flex-row lg:w-3/12 lg:flex-col lg:justify-between lg:border-l-4"
@@ -222,6 +222,7 @@
               >
                 <h1
                   class="exp__comp text-content text-base font-bold lg:text-base"
+                  data-tab="1"
                 >
                   JAZEERA PAINTS
                 </h1>
@@ -231,15 +232,16 @@
               >
                 <h1
                   class="exp__comp text-content text-base font-bold lg:text-base"
+                  data-tab="2"
                 >
                   K-PAS Instronic Engineers
                 </h1>
               </div>
             </div>
             <div
-              class="exp_content relative mt-5 text-justify leading-loose tracking-widest lg:mt-0 lg:w-3/6"
+              class="exp_content mt-5 h-fit border text-justify leading-loose tracking-widest lg:mt-0 lg:w-3/6"
             >
-              <div class="jazeera-content visible">
+              <div class="jazeera exp__content--1">
                 <h1 class="text-content mt-3 text-lg font-bold lg:text-xl">
                   Ingénieur de production
                   <span class="text-heading">@ Jazeera Paints</span>
@@ -268,7 +270,7 @@
                 </ul>
               </div>
               <div
-                class="kpas-content invisible absolute top-0 left-0 text-justify leading-loose tracking-widest"
+                class="kpas exp__content--2 hidden h-full text-justify leading-loose tracking-widest"
               >
                 <h1 class="text-content mt-3 text-lg font-bold lg:text-xl">
                   Ingénieur commercial techno<span class="text-heading"

@@ -590,6 +590,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: table;
 }
 
+.contents{
+  display: contents;
+}
+
+.hidden{
+  display: none;
+}
+
 .h-fit{
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -610,6 +618,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-20{
   height: 5rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-3\/5{
+  height: 60%;
 }
 
 .w-3\/5{
