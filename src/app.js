@@ -1,3 +1,4 @@
+/* --------------------------------------------------------------------------------------------- */
 //// Hamburger menu
 
 const hamburgerOpen = document.querySelector(".hamburger__open");
@@ -121,4 +122,4 @@ companiesBox.addEventListener("click", function (e) {
 
 /* --------------------------------------------------------------------------------------------- */
 
-////:implementing sticky navigation bar after certain point
+////implementing sticky navigation bar after certain point
