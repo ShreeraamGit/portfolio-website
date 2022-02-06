@@ -86,3 +86,25 @@ box1.addEventListener("mouseout", function (e) {
   box2.classList.remove("translate-y-2");
   box1.classList.add("bg-aux");
 });
+
+/* --------------------------------------------------------------------------------------------- */
+
+////exp content animation
+
+const companiesBox = document.querySelector(".exp-line");
+
+companiesBox.addEventListener("click", function (e) {
+  e.preventDefault();
+  target = e.target;
+  if (target.classList.contains("exp__comp")) {
+    const others = target.closest(".exp-line").querySelectorAll(".exp");
+    const selectedExp = target.parentElement;
+    others.forEach((element) => {
+      if (element === selectedExp) {
+        element.classList.add("lg:border-l-4");
+      } else {
+        element.classList.remove("lg:border-l-4");
+      }
+    });
+  }
+});
