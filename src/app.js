@@ -102,8 +102,10 @@ companiesBox.addEventListener("click", function (e) {
     others.forEach((element) => {
       if (element === selectedExp) {
         element.classList.add("lg:border-l-4");
+        element.classList.add("border-b-4");
       } else {
         element.classList.remove("lg:border-l-4");
+        element.classList.remove("border-b-4");
       }
     });
   }
