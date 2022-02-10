@@ -20,106 +20,126 @@
         <a href="#">upgrade your browser</a> to improve your experience.
       </p>
     <![endif]-->
-    <main class="container">
-      <header class="">
-        <nav
-          class="nav from-aux-1 to-aux flex h-16 w-screen flex-row justify-end bg-gradient-to-r px-6 lg:h-20 lg:px-10"
+    <header
+      class="from-aux-1 to-aux fixed z-10 flex h-20 w-full items-center justify-between bg-gradient-to-r px-6 lg:px-12"
+    >
+      <div
+        class="nav-logo text-content font-logo-font decoration-heading text-lg font-bold overline decoration-4 lg:text-3xl"
+      >
+        Shreeraam.S
+      </div>
+      <nav class="">
+        <button class="hamburger-menu text-heading lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="open-menu h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="close-menu invisible absolute top-4 right-6 h-10 w-10 lg:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <ul
+          class="nav-links from-aux-1 to-aux text-heading fixed left-0 right-0 min-h-screen translate-x-full transform space-y-16 bg-gradient-to-r p-6 text-lg font-normal lg:relative lg:flex lg:min-h-0 lg:translate-x-0 lg:space-y-0 lg:space-x-10 lg:bg-none lg:p-0 lg:text-xl"
         >
-          <div
-            class="nav__logo decoration-heading flex-rox text-content font-logo-font mr-auto flex cursor-pointer self-center text-sm overline lg:text-3xl"
-            id="logo"
+          <li class="nav__item">
+            <a class="nav__link" href="#about">01. About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#work">02. Experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#project">03. Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#hire-me">04. Why Hire me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">05. Contact</a>
+          </li>
+        </ul>
+        <div
+          class="hamburger__close text-heading invisible absolute cursor-pointer self-center lg:invisible"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <h1 class="">Shreeraam . S</h1>
-          </div>
-          <ul
-            class="nav__links text-content invisible flex h-fit w-3/5 flex-row justify-around self-center text-xl tracking-wider lg:visible"
-          >
-            <li class="nav__item">
-              <a class="nav__link" href="#section-1">01. About</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#section-2">02. Experience</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#section-3">03. Projects</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">04. Contact</a>
-            </li>
-          </ul>
-          <div
-            class="hamburger__open text-heading visible cursor-pointer self-center lg:invisible"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <div
-            class="hamburger__close text-heading invisible absolute cursor-pointer self-center lg:invisible"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </div>
-        </nav>
-        <section class="about-content mt-20 px-6 py-6 lg:mt-32 lg:px-14">
-          <h1 class="text-heading mb-6 text-2xl">Hi, My name is,</h1>
-          <h1 class="font-logo-font text-content mb-6 text-7xl">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="min-h-screen px-5 pt-36 lg:px-12 lg:pt-44" id="main">
+        <div class="h-full lg:h-full">
+          <h1 class="text-heading mb-8 text-2xl">Hi, My name is,</h1>
+          <h1 class="font-logo-font text-content mb-6 text-6xl lg:text-7xl">
             Shreeraam Sethuraj.
           </h1>
-          <h1 class="text-heading mb-6 text-3xl lg:text-7xl">
+          <h1 class="text-heading mb-8 text-3xl lg:text-7xl">
             I am a
             <span
               class="from-aux-1 to-aux relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-gradient-to-r"
             >
-              <span class="text-content relative">Front End</span>
+              <span class="text-content front-character relative"
+                >Front End</span
+              >
             </span>
             Developer.
           </h1>
-          <div
-            class="text-content w-full text-justify leading-loose tracking-widest lg:w-2/4"
-          >
-            <p>
-              I love to build things which live in web with exceptional digital
-              experiences. Currently I live in France, searching for new
-              challenges in the field I am passionate about.
-            </p>
-          </div>
-          <button
-            class="border-content hover:text-heading from-aux-1 to-aux text-content mt-20 mb-20 cursor-pointer rounded-md border-2 px-8 py-3 hover:scale-125 hover:bg-gradient-to-r"
-          >
-            Learn More
-          </button>
-        </section>
-      </header>
-      <section class="section-about_me px-6 py-6 lg:px-14" id="section-1">
+        </div>
+        <div
+          class="text-content mt-10 text-justify leading-loose tracking-widest lg:mt-10 lg:w-3/5 lg:text-lg"
+        >
+          <p>
+            I love to build things which live in web with exceptional digital
+            experiences. Currently I live in France, searching for new
+            challenges in the field I am passionate about.
+          </p>
+        </div>
+        <button
+          class="border-content hover:text-heading from-aux-1 to-aux text-content mt-20 mb-10 cursor-pointer rounded-md border-2 px-8 py-3 hover:scale-110 hover:bg-gradient-to-r lg:hover:scale-125"
+        >
+          Learn More
+        </button>
+      </section>
+      <section class="section-about_me px-6 py-6 lg:px-14" id="about">
         <article>
           <header class="about_content mb-12 lg:mb-0">
             <div class="aboutme-header flex flex-row place-items-center">
-              <h1 class="text-heading mb-6 mr-5 text-xl font-bold lg:text-2xl">
-                <span class="text-content">01.</span> About Me
+              <h1
+                class="text-heading decoration-content mb-6 mr-5 text-base font-bold underline decoration-wavy underline-offset-8 lg:text-2xl"
+              >
+                <span class="text-content">01.</span>About Me
               </h1>
               <div
                 class="line border-content w-6/12 -translate-y-3 border-b-2 lg:w-2/5"
@@ -130,16 +150,16 @@
             class="inner__box flex h-fit w-full flex-col lg:h-fit lg:w-full lg:flex-row"
           >
             <div
-              class="image-box flex h-2/4 w-full flex-col justify-center p-5 lg:h-full lg:w-2/6 lg:self-center lg:p-0"
+              class="image-box flex h-2/4 w-full flex-col justify-start lg:h-full lg:w-2/6 lg:self-center lg:p-0"
             >
               <div
-                class="interior-image-box h-72 w-72 translate-x-7 lg:h-80 lg:w-80 lg:translate-x-11"
+                class="interior-image-box h-72 w-72 translate-x-2 lg:h-80 lg:w-80 lg:translate-x-11"
               >
                 <div
                   class="box-1 border-content h-72 w-72 rounded-xl border-2 lg:h-80 lg:w-80"
                 ></div>
                 <div
-                  class="box-2 absolute top-0 left-0 translate-x-6 translate-y-6 rounded-xl"
+                  class="box-2 absolute top-0 left-0 translate-x-5 translate-y-5 rounded-xl"
                 >
                   <img
                     class="border-content h-72 w-72 rounded-xl border-2 lg:h-80 lg:w-80"
@@ -148,7 +168,7 @@
                   />
                 </div>
                 <div
-                  class="box-3 bg-aux border-content absolute top-0 left-0 h-72 w-72 translate-x-6 translate-y-6 rounded-xl border opacity-40 lg:h-80 lg:w-80"
+                  class="box-3 bg-aux border-content absolute top-0 left-0 h-72 w-72 translate-x-5 translate-y-5 rounded-xl border opacity-40 lg:h-80 lg:w-80"
                 ></div>
               </div>
             </div>
@@ -183,7 +203,7 @@
               </h1>
               <br />
               <table
-                class="text-heading mb-20 table-fixed text-justify font-bold leading-loose tracking-widest"
+                class="text-heading mb-10 table-fixed text-justify font-bold leading-loose tracking-widest"
               >
                 <thead>
                   <tr></tr>
@@ -207,14 +227,13 @@
           </section>
         </article>
       </section>
-      <section
-        class="section-exp h-fit px-6 py-6 lg:h-full lg:px-14"
-        id="section-2"
-      >
+      <section class="section-exp h-fit px-6 py-6 lg:h-full lg:px-14" id="work">
         <article class="">
           <header class="about_content mb-12 lg:mb-0">
             <div class="aboutme-header flex flex-row place-items-center">
-              <h1 class="text-heading mb-6 mr-5 text-xl font-bold lg:text-2xl">
+              <h1
+                class="text-heading decoration-content mb-6 mr-5 text-base font-bold underline decoration-wavy underline-offset-8 lg:text-2xl"
+              >
                 <span class="text-content">02.</span>Where I've Worked
               </h1>
               <div
@@ -232,7 +251,7 @@
                 class="exp selected__exp text-content border-heading mr-14 flex h-20 w-3/6 cursor-pointer flex-col justify-center border-b-4 p-3 text-center lg:mr-0 lg:w-3/5 lg:place-items-start lg:rounded-none lg:border-l-4 lg:border-b-0 lg:bg-inherit"
               >
                 <h1
-                  class="exp__comp text-content text-base font-bold lg:text-base"
+                  class="exp__comp text-content text-sm font-bold lg:text-base"
                   data-tab="1"
                 >
                   JAZEERA PAINTS
@@ -242,7 +261,7 @@
                 class="exp text-content border-heading flex h-20 w-3/6 cursor-pointer flex-col justify-center p-3 text-center lg:w-3/5 lg:place-items-start lg:rounded-none lg:border-b-0 lg:bg-inherit"
               >
                 <h1
-                  class="exp__comp text-content text-base font-bold lg:text-base"
+                  class="exp__comp text-content text-sm font-bold lg:text-base"
                   data-tab="2"
                 >
                   K-PAS Instronic Engineers
@@ -253,7 +272,9 @@
               class="exp_content mt-5 h-fit text-justify leading-loose tracking-widest lg:mt-0 lg:w-3/5"
             >
               <div class="jazeera exp__content--1">
-                <h1 class="text-content mt-3 text-lg font-bold lg:text-xl">
+                <h1
+                  class="text-content mt-3 text-base font-semibold lg:text-xl"
+                >
                   Ingénieur de production
                   <span class="text-heading">@ Jazeera Paints</span>
                 </h1>
@@ -283,7 +304,9 @@
               <div
                 class="kpas exp__content--2 hidden h-full text-justify leading-loose tracking-widest"
               >
-                <h1 class="text-content mt-3 text-lg font-bold lg:text-xl">
+                <h1
+                  class="text-content mt-3 text-base font-semibold lg:text-xl"
+                >
                   Ingénieur commercial techno<span class="text-heading"
                     >@ K-PAS Instronic Engineers Pvt.Ltd</span
                   >
@@ -302,13 +325,15 @@
         </article>
       </section>
       <section
-        class="projects mt-24 border px-6 py-6 lg:h-screen lg:w-screen lg:px-14"
-        id="section-3"
+        class="projects mt-10 border px-6 py-6 lg:h-screen lg:w-screen lg:px-14"
+        id="project"
       >
         <article class="project_content">
           <header class="about_content mb-12 lg:mb-0">
             <div class="aboutme-header flex flex-row place-items-center">
-              <h1 class="text-heading mb-6 mr-5 text-xl font-bold lg:text-2xl">
+              <h1
+                class="text-heading mb-6 mr-5 text-base font-bold lg:text-2xl"
+              >
                 <span class="text-content">03.</span>Projects I'have done
               </h1>
               <div
@@ -324,7 +349,7 @@
       <section class="section-contact">
         <article></article>
       </section>
+      <script src="app.js" async defer></script>
     </main>
-    <script src="app.js" async defer></script>
   </body>
 </html>

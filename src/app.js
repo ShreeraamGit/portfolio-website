@@ -1,70 +1,71 @@
 /* --------------------------------------------------------------------------------------------- */
-//// Hamburger menu
 
-const hamburgerOpen = document.querySelector(".hamburger__open");
-const hamburgerClose = document.querySelector(".hamburger__close");
-const navLinks = document.querySelector(".nav__links");
-////console.log(navLinks);
-hamburgerOpen.addEventListener("click", function (e) {
-  ////console.log("open");
-  hamburgerClose.classList.remove("invisible");
-  hamburgerOpen.classList.remove("visible");
-  hamburgerOpen.classList.add("invisible");
+///Hamburger menu
+const hamburger = document.querySelector(".open-menu");
+const navLinks = document.querySelector(".nav-links");
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+const front = document.querySelector(".front-character");
+////console.log(front);
+///console.log(navLinks);
+hamburger.addEventListener("click", function (e) {
+  navLinks.classList.remove("translate-x-full");
+  navLinks.classList.add("translate-x-0");
+  openMenu.classList.add("invisible");
+  closeMenu.classList.remove("invisible");
 });
 
-hamburgerClose.addEventListener("click", function (e) {
-  ////console.log("close");
-  hamburgerClose.classList.add("invisible");
-  hamburgerOpen.classList.remove("invisible");
-  hamburgerOpen.classList.add("visible");
+closeMenu.addEventListener("click", function (e) {
+  navLinks.classList.remove("translate-x-0");
+  navLinks.classList.add("translate-x-full");
+  openMenu.classList.remove("invisible");
+  closeMenu.classList.add("invisible");
 });
 
-/*------------------------------------------------------------------------------------------*/
-
-////hover states in nav bar implementation;
-const totalNavItems = document.querySelector(".nav");
-
+//// nav bar hover states
+const totalNavItems = document.querySelector(".nav-links");
+///console.log(totalNavItems);
 totalNavItems.addEventListener("mouseover", function (e) {
-  e.preventDefault();
-  const target = e.target;
+  target = e.target;
+  ///console.log(target.parentElement);
   if (target.classList.contains("nav__link")) {
-    const others = target.closest(".nav").querySelectorAll(".nav__link");
+    const others = document.querySelectorAll(".nav__item");
     ///console.log(others);
     others.forEach((element) => {
-      if (element !== target) {
+      if (element !== target.parentElement) {
+        ///console.log(element.children);
         element.classList.add("transition");
-        element.classList.add("duration-300");
+        element.classList.add("duration-500");
         element.classList.add("opacity-30");
       } else {
-        const links = element.parentElement;
-        links.classList.add("underline");
-        links.classList.add("decoration-4");
-        links.classList.add("underline-offset-8");
+        element.classList.add("underline");
+        target.classList.add("decoration-wavy");
+        target.classList.add("decoration-content");
+        target.classList.add("underline-offset-8");
+        target.classList.add("decoration-2");
       }
     });
   }
 });
 totalNavItems.addEventListener("mouseout", function (e) {
-  e.preventDefault();
-  const target = e.target;
+  target = e.target;
+  ///console.log(target.parentElement);
   if (target.classList.contains("nav__link")) {
-    const others = target.closest(".nav").querySelectorAll(".nav__link");
+    const others = document.querySelectorAll(".nav__item");
     ///console.log(others);
     others.forEach((element) => {
-      if (element !== target) {
-        element.classList.add("transition");
-        element.classList.add("duration-300");
+      if (element !== target.parentElement) {
+        ///console.log(element.children);
         element.classList.remove("opacity-30");
       } else {
-        const links = element.parentElement;
-        links.classList.remove("underline");
+        element.classList.remove("underline");
       }
     });
   }
 });
-
 /*-----------------------------------------------------------------------------------------------*/
 ///about me photo animation
+
 const box1 = document.querySelector(".box-3");
 const box2 = document.querySelector(".box-1");
 const box3 = document.querySelector(".box-2");
