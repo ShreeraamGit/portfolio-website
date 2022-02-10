@@ -63,6 +63,16 @@ totalNavItems.addEventListener("mouseout", function (e) {
     });
   }
 });
+
+totalNavItems.addEventListener("click", function (e) {
+  if (target.classList.contains("nav__link")) {
+    navLinks.classList.remove("translate-x-0");
+    navLinks.classList.add("translate-x-full");
+    openMenu.classList.remove("invisible");
+    closeMenu.classList.add("invisible");
+  }
+});
+
 /*-----------------------------------------------------------------------------------------------*/
 ///about me photo animation
 
@@ -122,5 +132,3 @@ companiesBox.addEventListener("click", function (e) {
 });
 
 /* --------------------------------------------------------------------------------------------- */
-
-////implementing sticky navigation bar after certain point
