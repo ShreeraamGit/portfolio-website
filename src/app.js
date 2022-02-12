@@ -1,3 +1,10 @@
+///// height
+
+const h = window.innerHeight;
+const mainSection = document.querySelector(".first-section");
+mainSection.classList.add(`h-${h}px`);
+console.log(mainSection);
+
 /* --------------------------------------------------------------------------------------------- */
 
 ///Hamburger menu
@@ -9,6 +16,8 @@ const front = document.querySelector(".front-character");
 ////console.log(front);
 ///console.log(navLinks);
 hamburger.addEventListener("click", function (e) {
+  navLinks.classList.add("transition");
+  navLinks.classList.add("duration-700");
   navLinks.classList.remove("translate-x-full");
   navLinks.classList.add("translate-x-0");
   openMenu.classList.add("invisible");
@@ -39,10 +48,8 @@ totalNavItems.addEventListener("mouseover", function (e) {
         element.classList.add("opacity-30");
       } else {
         element.classList.add("underline");
-        target.classList.add("decoration-wavy");
-        target.classList.add("decoration-content");
-        target.classList.add("underline-offset-8");
-        target.classList.add("decoration-2");
+        element.classList.add("underline-offset-8");
+        element.classList.add("decoration-2");
       }
     });
   }
@@ -132,3 +139,12 @@ companiesBox.addEventListener("click", function (e) {
 });
 
 /* --------------------------------------------------------------------------------------------- */
+
+///slider
+/*
+const slides = document.querySelectorAll(".slide");
+slides.forEach((element, index) => {
+  element.classList.add("transform");
+  element.classList.add(`translate-x-[${200 * index}rem]`);
+});
+*/
