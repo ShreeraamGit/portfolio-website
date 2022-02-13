@@ -650,6 +650,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -712,6 +716,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-9\/12{
   width: 75%;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .max-w-7xl{
@@ -1312,6 +1320,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-6\/12{
+    width: 50%;
+  }
+
+  .lg\:w-4\/5{
+    width: 80%;
+  }
+
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:translate-x-0{
