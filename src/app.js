@@ -3,7 +3,6 @@
 const h = window.innerHeight;
 const mainSection = document.querySelector(".first-section");
 mainSection.classList.add(`h-${h}px`);
-console.log(mainSection);
 
 /* --------------------------------------------------------------------------------------------- */
 
@@ -141,10 +140,49 @@ companiesBox.addEventListener("click", function (e) {
 /* --------------------------------------------------------------------------------------------- */
 
 ///slider
-/*
+
 const slides = document.querySelectorAll(".slide");
-slides.forEach((element, index) => {
-  element.classList.add("transform");
-  element.classList.add(`translate-x-[${200 * index}rem]`);
+const maxSlides = slides.length;
+console.log(maxSlides);
+const btnRight = document.querySelector(".button-right");
+const btnLeft = document.querySelector(".button-left");
+let curSlide = 0;
+
+const gotoSlide = function (slideNum) {
+  slides.forEach(function (slide, index) {
+    slide.style.transform = `translateX(${100 * (index - slideNum)}%)`;
+  });
+};
+
+gotoSlide(0);
+
+btnRight.addEventListener("click", function () {
+  if (curSlide === maxSlides - 1) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  gotoSlide(curSlide);
+});
+
+btnLeft.addEventListener("click", function () {
+  if (curSlide === 0) {
+    curSlide = maxSlides - 1;
+  } else {
+    curSlide--;
+  }
+  gotoSlide(curSlide);
+});
+
+/*
+
+
+btnRight.addEventListener("click", function () {
+  curSlide++;
+  slides.forEach((element, index) => {
+    element.classList.remove(`translate-x-[${50 * index}rem]`);
+    element.classList.add(`translate-x-[${50 * (index - curSlide)}rem]`);
+    ////element.classList.add("duration-1000");
+  });
 });
 */
