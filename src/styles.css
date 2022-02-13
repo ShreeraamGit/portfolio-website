@@ -827,12 +827,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(78 205 196 / 0));
 }
 
+.from-heading{
+  --tw-gradient-from: #FF6B6B;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(255 107 107 / 0));
+}
+
 .to-aux{
   --tw-gradient-to: #4ECDC4;
 }
 
 .to-aux-1{
   --tw-gradient-to: #FFE66D;
+}
+
+.to-content{
+  --tw-gradient-to: #1A535C;
 }
 
 .p-6{

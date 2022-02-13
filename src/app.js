@@ -143,7 +143,7 @@ companiesBox.addEventListener("click", function (e) {
 
 const slides = document.querySelectorAll(".slide");
 const maxSlides = slides.length;
-console.log(maxSlides);
+///console.log(maxSlides);
 const btnRight = document.querySelector(".button-right");
 const btnLeft = document.querySelector(".button-left");
 let curSlide = 0;
