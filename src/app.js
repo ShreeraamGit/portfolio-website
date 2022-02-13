@@ -139,13 +139,15 @@ companiesBox.addEventListener("click", function (e) {
 
 /* --------------------------------------------------------------------------------------------- */
 
-///slider
+///slider animation
 
 const slides = document.querySelectorAll(".slide");
 const maxSlides = slides.length;
 ///console.log(maxSlides);
 const btnRight = document.querySelector(".button-right");
 const btnLeft = document.querySelector(".button-left");
+const dotContainer = document.querySelector(".dots");
+//console.log(dotContainer);
 let curSlide = 0;
 
 const gotoSlide = function (slideNum) {
@@ -154,7 +156,17 @@ const gotoSlide = function (slideNum) {
   });
 };
 
+const createDots = function () {
+  slides.forEach(function (_, i) {
+    dotContainer.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots_dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
+    );
+  });
+};
+
 gotoSlide(0);
+createDots();
 
 btnRight.addEventListener("click", function () {
   if (curSlide === maxSlides - 1) {
@@ -174,15 +186,15 @@ btnLeft.addEventListener("click", function () {
   gotoSlide(curSlide);
 });
 
-/*
+///// dots animation
+const dotContainer = document.querySelector(".dots");
+console.log(dotContainer);
 
-
-btnRight.addEventListener("click", function () {
-  curSlide++;
-  slides.forEach((element, index) => {
-    element.classList.remove(`translate-x-[${50 * index}rem]`);
-    element.classList.add(`translate-x-[${50 * (index - curSlide)}rem]`);
-    ////element.classList.add("duration-1000");
+const createDots = function () {
+  slides.forEach(function (_, i) {
+    dotContainer.insertAdjacentHTML(
+      "beforeend",
+      `<button class="dots_dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
+    );
   });
-});
-*/
+};
