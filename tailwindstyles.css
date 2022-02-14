@@ -8,3 +8,9 @@
 .slide {
   transition: transform 1s;
 }
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #1a535c;
+  opacity: 1;
+}

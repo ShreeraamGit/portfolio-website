@@ -160,12 +160,18 @@ const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
-      `<button class="dots_dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
+      `<button class="dots__dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
     );
   });
 };
+const activateDot = function (slide) {
+  document.querySelectorAll(".dots__dot").forEach(function (el) {
+    el.classList.remove("dots__dot--active");
+  });
+};
 
-gotoSlide(0);
+gotoSlide(curSlide);
+activateDot(curSlide);
 createDots();
 
 btnRight.addEventListener("click", function () {
@@ -187,14 +193,13 @@ btnLeft.addEventListener("click", function () {
 });
 
 ///// dots animation
-const dotContainer = document.querySelector(".dots");
-console.log(dotContainer);
+////console.log(dotContainer);
 
-const createDots = function () {
-  slides.forEach(function (_, i) {
-    dotContainer.insertAdjacentHTML(
-      "beforeend",
-      `<button class="dots_dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
-    );
-  });
-};
+dotContainer.addEventListener("click", function (e) {
+  const target = e.target;
+  ///console.log(target);
+  if (target.classList.contains("dots__dot")) {
+    const slide = target.dataset.slide;
+    gotoSlide(slide);
+  }
+});
