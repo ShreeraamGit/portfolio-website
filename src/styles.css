@@ -580,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2.5rem;
 }
 
+.ml-5{
+  margin-left: 1.25rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -642,12 +646,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
-.h-3\/6{
-  height: 50%;
+.h-screen{
+  height: 100vh;
 }
 
-.h-4\/5{
-  height: 80%;
+.h-24{
+  height: 6rem;
+}
+
+.max-h-24{
+  max-height: 6rem;
 }
 
 .min-h-screen{
@@ -690,8 +698,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
-.w-20{
-  width: 5rem;
+.w-2\/4{
+  width: 50%;
+}
+
+.w-2\/5{
+  width: 40%;
 }
 
 .table-fixed{
@@ -730,6 +742,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .translate-y-5{
   --tw-translate-y: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-3\/4{
+  --tw-translate-y: 75%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-3\/4{
+  --tw-translate-x: 75%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-1\/4{
+  --tw-translate-x: 25%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -779,6 +806,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
@@ -877,16 +908,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
-.p-5{
-  padding: 1.25rem;
+.p-8{
+  padding: 2rem;
 }
 
 .p-10{
   padding: 2.5rem;
 }
 
-.p-8{
-  padding: 2rem;
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-6{
@@ -912,6 +943,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-40{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.px-80{
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .pt-32{
@@ -967,6 +1023,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold{
@@ -1051,10 +1112,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.4;
 }
 
-.shadow-2xl{
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.blur-lg{
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-sm{
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition{
@@ -1223,10 +1288,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 4rem;
   }
 
-  .lg\:h-screen{
-    height: 100vh;
-  }
-
   .lg\:min-h-0{
     min-height: 0px;
   }
@@ -1265,6 +1326,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-16{
     width: 4rem;
+  }
+
+  .lg\:w-2\/4{
+    width: 50%;
+  }
+
+  .lg\:w-1\/5{
+    width: 20%;
   }
 
   .lg\:translate-x-0{
@@ -1370,6 +1439,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .lg\:py-10{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .lg\:pt-44{
