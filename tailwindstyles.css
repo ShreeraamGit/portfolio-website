@@ -9,6 +9,11 @@
   transition: transform 1s;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateX(-10rem);
+}
+
 .dots__dot--active {
   /* background-color: #fff; */
   background-color: #1a535c;

@@ -203,3 +203,25 @@ dotContainer.addEventListener("click", function (e) {
     gotoSlide(slide);
   }
 });
+
+/*-------------------------------------------------------------*/
+
+/// Reveal Sections animations
+const sections = document.querySelectorAll(".section");
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) {
+    return;
+  } else {
+    entry.target.classList.remove("section--hidden");
+  }
+};
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
+sections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
