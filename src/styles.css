@@ -1073,7 +1073,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .section--hidden {
   opacity: 0;
-  transform: translateX(30rem);
+  transform: translateY(20rem);
 }
 
 .dots__dot--active {
