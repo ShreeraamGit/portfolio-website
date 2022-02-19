@@ -540,8 +540,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
-.mb-20{
-  margin-bottom: 5rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 
 .mb-12{
@@ -558,10 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-0{
   margin-left: 0px;
-}
-
-.mb-10{
-  margin-bottom: 2.5rem;
 }
 
 .mr-14{
@@ -1045,8 +1041,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.transition-transform{
-  transition-property: transform;
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1067,13 +1063,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 300ms;
 }
 
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
 .slide {
   transition: transform 1s;
 }
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(20rem);
+  transform: translateY(1rem);
 }
 
 .dots__dot--active {
@@ -1152,8 +1152,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 2.5rem;
   }
 
-  .lg\:mb-40{
-    margin-bottom: 10rem;
+  .lg\:mb-20{
+    margin-bottom: 5rem;
   }
 
   .lg\:mb-0{
@@ -1182,6 +1182,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:ml-5{
     margin-left: 1.25rem;
+  }
+
+  .lg\:mb-40{
+    margin-bottom: 10rem;
   }
 
   .lg\:flex{

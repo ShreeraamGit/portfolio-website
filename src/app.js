@@ -210,7 +210,7 @@ dotContainer.addEventListener("click", function (e) {
 const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  ///console.log(entry);
   if (!entry.isIntersecting) {
     return;
   } else {
@@ -219,7 +219,7 @@ const revealSection = function (entries, observer) {
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.3,
 });
 sections.forEach(function (section) {
   sectionObserver.observe(section);

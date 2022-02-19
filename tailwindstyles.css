@@ -11,7 +11,7 @@
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(20rem);
+  transform: translateY(1rem);
 }
 
 .dots__dot--active {
