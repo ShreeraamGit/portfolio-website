@@ -160,7 +160,7 @@ const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
-      `<button class="dots__dot h-3 w-3 border-2 border-content mr-7 rounded-full" data-slide="${i}"></button>`
+      `<button class="dots__dot h-3 w-3 border-2 border-content dark:border-main-bg mr-7 rounded-full" data-slide="${i}"></button>`
     );
   });
 };

@@ -1131,6 +1131,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 107 107 / var(--tw-text-opacity));
 }
 
+.dark .dark\:border-main-bg{
+  --tw-border-opacity: 1;
+  border-color: rgb(247 255 247 / var(--tw-border-opacity));
+}
+
+.dark .dark\:bg-content{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 83 92 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-main-bg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 255 247 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-main-bg{
+  --tw-text-opacity: 1;
+  color: rgb(247 255 247 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-heading:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 107 107 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-main-bg:hover{
+  --tw-text-opacity: 1;
+  color: rgb(247 255 247 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px){
   .lg\:visible{
     visibility: visible;
