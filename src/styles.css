@@ -1187,7 +1187,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 6px;
   bottom: 4px;
   background-color: #f7fff7;
-  transition: 0.7s;
+  transition: 0.4s;
 }
 
 input:checked + .mover {

@@ -53,7 +53,7 @@
   bottom: 4px;
   background-color: #f7fff7;
   -webkit-transition: 0.4s;
-  transition: 0.7s;
+  transition: 0.4s;
 }
 
 input:checked + .mover {
