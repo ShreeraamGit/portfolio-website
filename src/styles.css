@@ -1141,7 +1141,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #ff6b6b;
   transition: 0.4s;
 }
 
@@ -1157,11 +1157,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 input:checked + .mover {
-  background-color: #ff6b6b;
+  background-color: #1a535c;
 }
 
 input:focus + .mover {
-  box-shadow: 0 0 1px #ff6b6b;
+  box-shadow: 0 0 1px #1a535c;
 }
 
 input:checked + .mover:before {
