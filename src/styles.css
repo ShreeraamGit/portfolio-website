@@ -678,6 +678,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-7{
+  height: 1.75rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -734,6 +738,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-16{
   width: 4rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .table-fixed{
