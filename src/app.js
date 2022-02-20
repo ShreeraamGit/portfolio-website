@@ -229,15 +229,29 @@ sections.forEach(function (section) {
 /*-------------------------------------------------------------*/
 
 ///Dark mode enable/disable -- mobile mode
-const switchON = document.querySelector(".light-on");
+const switchOn = document.querySelector(".light-on");
 const toggle = document.querySelector(".top-html");
 
-switchON.addEventListener("change", function () {
-  if (switchON.checked) {
-    console.log("yes");
+switchOn.addEventListener("change", function () {
+  if (switchOn.checked) {
+    ///console.log("yes");
     toggle.classList.remove("dark");
   } else {
-    console.log("no");
+    ///console.log("no");
     toggle.classList.add("dark");
+  }
+});
+
+///Dark mode enable/disable -- desktop mode
+const switchOnLg = document.querySelector(".light-on-lg");
+const toggleLg = document.querySelector(".top-html");
+
+switchOnLg.addEventListener("change", function () {
+  if (switchOnLg.checked) {
+    console.log("yes");
+    toggleLg.classList.remove("dark");
+  } else {
+    console.log("no");
+    toggleLg.classList.add("dark");
   }
 });
