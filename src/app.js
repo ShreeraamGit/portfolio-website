@@ -229,3 +229,15 @@ sections.forEach(function (section) {
 /*-------------------------------------------------------------*/
 
 ///Dark mode enable/disable
+const switchON = document.querySelector(".light-on");
+const toggle = document.querySelector(".top-html");
+
+switchON.addEventListener("change", function () {
+  if (switchON.checked) {
+    ////console.log("yes");
+    toggle.classList.remove("dark");
+  } else {
+    ////console.log("no");
+    toggle.classList.add("dark");
+  }
+});
