@@ -225,3 +225,7 @@ sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+
+/*-------------------------------------------------------------*/
+
+///Dark mode enable/disable
