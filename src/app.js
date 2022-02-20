@@ -245,13 +245,14 @@ switchOn.addEventListener("change", function () {
 ///Dark mode enable/disable -- desktop mode
 const switchOnLg = document.querySelector(".light-on-lg");
 const toggleLg = document.querySelector(".top-html");
-
+const modeLight = document.querySelector(".light-mode-lg");
+////console.log(modeLight);
 switchOnLg.addEventListener("change", function () {
   if (switchOnLg.checked) {
-    console.log("yes");
+    ///console.log("yes");
     toggleLg.classList.remove("dark");
   } else {
-    console.log("no");
+    ////console.log("no");
     toggleLg.classList.add("dark");
   }
 });
