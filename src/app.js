@@ -228,16 +228,16 @@ sections.forEach(function (section) {
 
 /*-------------------------------------------------------------*/
 
-///Dark mode enable/disable
+///Dark mode enable/disable -- mobile mode
 const switchON = document.querySelector(".light-on");
 const toggle = document.querySelector(".top-html");
 
 switchON.addEventListener("change", function () {
   if (switchON.checked) {
-    ////console.log("yes");
+    console.log("yes");
     toggle.classList.remove("dark");
   } else {
-    ////console.log("no");
+    console.log("no");
     toggle.classList.add("dark");
   }
 });

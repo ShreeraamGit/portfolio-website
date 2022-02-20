@@ -16,7 +16,7 @@
 
 .dots__dot--active {
   /* background-color: #fff; */
-  background-color: #1a535c;
+  background-color: #f7fff7;
   opacity: 1;
 }
 .switch {
@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff6b6b;
+  background-color: #1a535c;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -51,17 +51,17 @@
   width: 22px;
   left: 6px;
   bottom: 4px;
-  background-color: white;
+  background-color: #f7fff7;
   -webkit-transition: 0.4s;
   transition: 0.7s;
 }
 
 input:checked + .mover {
-  background-color: #1a535c;
+  background-color: #ff6b6b;
 }
 
 input:focus + .mover {
-  box-shadow: 0 0 1px #1a535c;
+  box-shadow: 0 0 1px #ff6b6b;
 }
 
 input:checked + .mover:before {
