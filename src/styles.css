@@ -524,6 +524,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 1.25rem;
 }
 
+.top-32{
+  top: 8rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -604,6 +608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -630,6 +638,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-7{
+  height: 1.75rem;
 }
 
 .h-10{
@@ -678,10 +690,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
-.h-7{
-  height: 1.75rem;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -696,6 +704,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-6{
   width: 1.5rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .w-10{
@@ -738,10 +750,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-16{
   width: 4rem;
-}
-
-.w-7{
-  width: 1.75rem;
 }
 
 .table-fixed{
@@ -824,6 +832,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: flex-start;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -834,6 +846,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around{
   justify-content: space-around;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
@@ -894,6 +910,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-heading{
   --tw-border-opacity: 1;
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-aux{
@@ -1026,6 +1047,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1052,14 +1078,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-loose{
   line-height: 2;
-}
-
-.leading-9{
-  line-height: 2.25rem;
-}
-
-.leading-10{
-  line-height: 2.5rem;
 }
 
 .tracking-widest{
@@ -1371,6 +1389,12 @@ input:checked + .mover-lg:before {
   color: rgb(247 255 247 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+}
+
 @media (min-width: 1024px){
   .lg\:visible{
     visibility: visible;
@@ -1428,6 +1452,18 @@ input:checked + .mover-lg:before {
     margin-bottom: 10rem;
   }
 
+  .lg\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .lg\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .lg\:mt-5{
+    margin-top: 1.25rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -1464,6 +1500,10 @@ input:checked + .mover-lg:before {
 
   .lg\:h-\[29rem\]{
     height: 29rem;
+  }
+
+  .lg\:h-6{
+    height: 1.5rem;
   }
 
   .lg\:min-h-0{
@@ -1516,6 +1556,10 @@ input:checked + .mover-lg:before {
     width: 25%;
   }
 
+  .lg\:w-6{
+    width: 1.5rem;
+  }
+
   .lg\:translate-x-0{
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1536,6 +1580,10 @@ input:checked + .mover-lg:before {
 
   .lg\:place-items-start{
     place-items: start;
+  }
+
+  .lg\:items-start{
+    align-items: flex-start;
   }
 
   .lg\:items-center{
@@ -1564,6 +1612,22 @@ input:checked + .mover-lg:before {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:self-start{
+    align-self: flex-start;
   }
 
   .lg\:self-center{
@@ -1622,8 +1686,17 @@ input:checked + .mover-lg:before {
     padding-right: 2.5rem;
   }
 
+  .lg\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .lg\:pt-44{
     padding-top: 11rem;
+  }
+
+  .lg\:pt-52{
+    padding-top: 13rem;
   }
 
   .lg\:text-3xl{
@@ -1661,9 +1734,190 @@ input:checked + .mover-lg:before {
     line-height: 1;
   }
 
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .lg\:hover\:scale-125:hover{
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:visible{
+    visibility: visible;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:w-1\/4{
+    width: 25%;
+  }
+
+  .xl\:w-1\/6{
+    width: 16.666667%;
+  }
+
+  .xl\:items-start{
+    align-items: flex-start;
+  }
+
+  .xl\:items-center{
+    align-items: center;
+  }
+
+  .xl\:space-x-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .xl\:self-start{
+    align-self: flex-start;
+  }
+
+  .xl\:self-center{
+    align-self: center;
+  }
+
+  .xl\:px-14{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:visible{
+    visibility: visible;
+  }
+
+  .\32xl\:hidden{
+    display: none;
+  }
+
+  .\32xl\:w-1\/4{
+    width: 25%;
+  }
+
+  .\32xl\:w-1\/6{
+    width: 16.666667%;
+  }
+
+  .\32xl\:space-x-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:space-x-16 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(4rem * var(--tw-space-x-reverse));
+    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:space-x-20 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(5rem * var(--tw-space-x-reverse));
+    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .\32xl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .\32xl\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .\32xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .\32xl\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
   }
 }

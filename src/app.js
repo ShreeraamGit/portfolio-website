@@ -1,9 +1,9 @@
 ///// height
-
+/*
 const h = window.innerHeight;
 const mainSection = document.querySelector(".first-section");
 mainSection.classList.add(`h-${h}px`);
-
+*/
 /* --------------------------------------------------------------------------------------------- */
 
 ///Hamburger menu
