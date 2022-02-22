@@ -524,10 +524,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 1.25rem;
 }
 
-.top-32{
-  top: 8rem;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -572,8 +568,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .mt-20{
@@ -596,20 +592,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0px;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mr-14{
   margin-right: 3.5rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-3{
   margin-top: 0.75rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .inline-block{
@@ -832,10 +824,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: flex-start;
 }
 
-.justify-end{
-  justify-content: flex-end;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -846,10 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around{
   justify-content: space-around;
-}
-
-.justify-evenly{
-  justify-content: space-evenly;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
@@ -982,6 +966,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4rem;
 }
 
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pt-32{
   padding-top: 8rem;
 }
@@ -1007,13 +1001,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -1022,14 +1011,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-xl{
@@ -1045,11 +1034,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold{
@@ -1389,12 +1373,6 @@ input:checked + .mover-lg:before {
   color: rgb(247 255 247 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px){
-  .md\:visible{
-    visibility: visible;
-  }
-}
-
 @media (min-width: 1024px){
   .lg\:visible{
     visibility: visible;
@@ -1412,8 +1390,8 @@ input:checked + .mover-lg:before {
     bottom: 50%;
   }
 
-  .lg\:mt-10{
-    margin-top: 2.5rem;
+  .lg\:mt-5{
+    margin-top: 1.25rem;
   }
 
   .lg\:mb-20{
@@ -1450,18 +1428,6 @@ input:checked + .mover-lg:before {
 
   .lg\:mb-40{
     margin-bottom: 10rem;
-  }
-
-  .lg\:mt-8{
-    margin-top: 2rem;
-  }
-
-  .lg\:mt-7{
-    margin-top: 1.75rem;
-  }
-
-  .lg\:mt-5{
-    margin-top: 1.25rem;
   }
 
   .lg\:flex{
@@ -1506,6 +1472,10 @@ input:checked + .mover-lg:before {
     height: 1.5rem;
   }
 
+  .lg\:h-7{
+    height: 1.75rem;
+  }
+
   .lg\:min-h-0{
     min-height: 0px;
   }
@@ -1514,8 +1484,8 @@ input:checked + .mover-lg:before {
     width: 60%;
   }
 
-  .lg\:w-1\/6{
-    width: 16.666667%;
+  .lg\:w-1\/4{
+    width: 25%;
   }
 
   .lg\:w-2\/5{
@@ -1552,21 +1522,16 @@ input:checked + .mover-lg:before {
     width: fit-content;
   }
 
-  .lg\:w-1\/4{
-    width: 25%;
-  }
-
   .lg\:w-6{
     width: 1.5rem;
   }
 
-  .lg\:translate-x-0{
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  .lg\:w-7{
+    width: 1.75rem;
   }
 
-  .lg\:translate-x-11{
-    --tw-translate-x: 2.75rem;
+  .lg\:translate-x-0{
+    --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1580,10 +1545,6 @@ input:checked + .mover-lg:before {
 
   .lg\:place-items-start{
     place-items: start;
-  }
-
-  .lg\:items-start{
-    align-items: flex-start;
   }
 
   .lg\:items-center{
@@ -1608,26 +1569,10 @@ input:checked + .mover-lg:before {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-5 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:self-start{
-    align-self: flex-start;
   }
 
   .lg\:self-center{
@@ -1666,6 +1611,11 @@ input:checked + .mover-lg:before {
     padding: 1.25rem;
   }
 
+  .lg\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .lg\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1686,37 +1636,12 @@ input:checked + .mover-lg:before {
     padding-right: 2.5rem;
   }
 
-  .lg\:px-9{
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
-  }
-
-  .lg\:pt-44{
-    padding-top: 11rem;
-  }
-
   .lg\:pt-52{
     padding-top: 13rem;
   }
 
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-7xl{
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .lg\:pt-44{
+    padding-top: 11rem;
   }
 
   .lg\:text-2xl{
@@ -1729,6 +1654,26 @@ input:checked + .mover-lg:before {
     line-height: 1.5rem;
   }
 
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-8xl{
     font-size: 6rem;
     line-height: 1;
@@ -1739,16 +1684,6 @@ input:checked + .mover-lg:before {
     line-height: 1.25rem;
   }
 
-  .lg\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .lg\:hover\:scale-125:hover{
     --tw-scale-x: 1.25;
     --tw-scale-y: 1.25;
@@ -1757,24 +1692,8 @@ input:checked + .mover-lg:before {
 }
 
 @media (min-width: 1280px){
-  .xl\:visible{
-    visibility: visible;
-  }
-
-  .xl\:hidden{
-    display: none;
-  }
-
-  .xl\:w-1\/4{
-    width: 25%;
-  }
-
   .xl\:w-1\/6{
     width: 16.666667%;
-  }
-
-  .xl\:items-start{
-    align-items: flex-start;
   }
 
   .xl\:items-center{
@@ -1787,17 +1706,8 @@ input:checked + .mover-lg:before {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xl\:self-start{
-    align-self: flex-start;
-  }
-
   .xl\:self-center{
     align-self: center;
-  }
-
-  .xl\:px-14{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 
   .xl\:px-12{
@@ -1805,24 +1715,9 @@ input:checked + .mover-lg:before {
     padding-right: 3rem;
   }
 
-  .xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .xl\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .xl\:text-xl{
@@ -1830,39 +1725,39 @@ input:checked + .mover-lg:before {
     line-height: 1.75rem;
   }
 
+  .xl\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .xl\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1536px){
-  .\32xl\:visible{
-    visibility: visible;
-  }
-
   .\32xl\:hidden{
     display: none;
   }
 
-  .\32xl\:w-1\/4{
-    width: 25%;
-  }
-
   .\32xl\:w-1\/6{
     width: 16.666667%;
-  }
-
-  .\32xl\:space-x-10 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .\32xl\:space-x-16 > :not([hidden]) ~ :not([hidden]){
-    --tw-space-x-reverse: 0;
-    margin-right: calc(4rem * var(--tw-space-x-reverse));
-    margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .\32xl\:space-x-20 > :not([hidden]) ~ :not([hidden]){
@@ -1871,24 +1766,9 @@ input:checked + .mover-lg:before {
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .\32xl\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-
-  .\32xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .\32xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .\32xl\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .\32xl\:text-5xl{
@@ -1896,19 +1776,24 @@ input:checked + .mover-lg:before {
     line-height: 1;
   }
 
+  .\32xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .\32xl\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
 
-  .\32xl\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .\32xl\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
   }
 
-  .\32xl\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .\32xl\:text-7xl{
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .\32xl\:text-8xl{
@@ -1916,8 +1801,18 @@ input:checked + .mover-lg:before {
     line-height: 1;
   }
 
-  .\32xl\:text-9xl{
-    font-size: 8rem;
-    line-height: 1;
+  .\32xl\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .\32xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
