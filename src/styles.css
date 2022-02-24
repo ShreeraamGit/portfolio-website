@@ -1675,6 +1675,14 @@ input:checked + .mover-lg:before {
     padding: 1.5rem;
   }
 
+  .lg\:p-10{
+    padding: 2.5rem;
+  }
+
+  .lg\:p-20{
+    padding: 5rem;
+  }
+
   .lg\:px-9{
     padding-left: 2.25rem;
     padding-right: 2.25rem;
@@ -1752,6 +1760,16 @@ input:checked + .mover-lg:before {
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:leading-relaxed{
@@ -1848,6 +1866,10 @@ input:checked + .mover-lg:before {
     align-self: center;
   }
 
+  .xl\:p-20{
+    padding: 5rem;
+  }
+
   .xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1881,6 +1903,11 @@ input:checked + .mover-lg:before {
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-8xl{
+    font-size: 6rem;
+    line-height: 1;
   }
 
   .xl\:leading-loose{
@@ -1972,6 +1999,11 @@ input:checked + .mover-lg:before {
   .\32xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .\32xl\:text-9xl{
+    font-size: 8rem;
+    line-height: 1;
   }
 
   .\32xl\:leading-loose{
