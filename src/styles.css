@@ -580,12 +580,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.mb-12{
-  margin-bottom: 3rem;
-}
-
 .mt-12{
   margin-top: 3rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .ml-0{
@@ -596,28 +596,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
 .mr-14{
   margin-right: 3.5rem;
 }
 
 .mt-3{
   margin-top: 0.75rem;
-}
-
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.mb-0{
-  margin-bottom: 0px;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .inline-block{
@@ -896,11 +888,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .bg-aux{
   --tw-bg-opacity: 1;
   background-color: rgb(78 205 196 / var(--tw-bg-opacity));
@@ -936,10 +923,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.p-0{
-  padding: 0px;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -968,16 +951,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-16{
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-0{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.py-10{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pt-32{
@@ -1058,10 +1031,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-light{
   font-weight: 300;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .leading-loose{
@@ -1398,12 +1367,12 @@ input:checked + .mover-lg:before {
     margin-top: 1.25rem;
   }
 
-  .lg\:mb-20{
-    margin-bottom: 5rem;
-  }
-
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:mt-14{
+    margin-top: 3.5rem;
   }
 
   .lg\:mt-0{
@@ -1422,6 +1391,14 @@ input:checked + .mover-lg:before {
     margin-top: 0.75rem;
   }
 
+  .lg\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .lg\:mt-10{
+    margin-top: 2.5rem;
+  }
+
   .lg\:mr-5{
     margin-right: 1.25rem;
   }
@@ -1432,26 +1409,6 @@ input:checked + .mover-lg:before {
 
   .lg\:mb-40{
     margin-bottom: 10rem;
-  }
-
-  .lg\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .lg\:mt-14{
-    margin-top: 3.5rem;
-  }
-
-  .lg\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .lg\:mt-28{
-    margin-top: 7rem;
-  }
-
-  .lg\:mt-32{
-    margin-top: 8rem;
   }
 
   .lg\:flex{
@@ -1492,20 +1449,8 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
-  .lg\:h-\[29rem\]{
-    height: 29rem;
-  }
-
   .lg\:h-\[25rem\]{
     height: 25rem;
-  }
-
-  .lg\:h-11{
-    height: 2.75rem;
-  }
-
-  .lg\:h-12{
-    height: 3rem;
   }
 
   .lg\:h-14{
@@ -1524,8 +1469,8 @@ input:checked + .mover-lg:before {
     width: 1.75rem;
   }
 
-  .lg\:w-3\/5{
-    width: 60%;
+  .lg\:w-3\/4{
+    width: 75%;
   }
 
   .lg\:w-1\/4{
@@ -1548,6 +1493,10 @@ input:checked + .mover-lg:before {
     width: 20rem;
   }
 
+  .lg\:w-3\/5{
+    width: 60%;
+  }
+
   .lg\:w-3\/12{
     width: 25%;
   }
@@ -1560,26 +1509,14 @@ input:checked + .mover-lg:before {
     width: 4rem;
   }
 
-  .lg\:w-fit{
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-
-  .lg\:w-12{
-    width: 3rem;
-  }
-
   .lg\:w-14{
     width: 3.5rem;
   }
 
-  .lg\:w-3\/4{
-    width: 75%;
-  }
-
-  .lg\:w-3\/6{
-    width: 50%;
+  .lg\:w-fit{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:translate-x-0{
@@ -1663,24 +1600,8 @@ input:checked + .mover-lg:before {
     padding: 1.25rem;
   }
 
-  .lg\:p-2{
-    padding: 0.5rem;
-  }
-
   .lg\:p-3{
     padding: 0.75rem;
-  }
-
-  .lg\:p-6{
-    padding: 1.5rem;
-  }
-
-  .lg\:p-10{
-    padding: 2.5rem;
-  }
-
-  .lg\:p-20{
-    padding: 5rem;
   }
 
   .lg\:px-9{
@@ -1701,21 +1622,6 @@ input:checked + .mover-lg:before {
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
-  .lg\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .lg\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .lg\:pt-44{
@@ -1752,24 +1658,9 @@ input:checked + .mover-lg:before {
     line-height: 2.25rem;
   }
 
-  .lg\:text-8xl{
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .lg\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .lg\:leading-relaxed{
@@ -1788,44 +1679,16 @@ input:checked + .mover-lg:before {
 }
 
 @media (min-width: 1280px){
-  .xl\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .xl\:mt-12{
-    margin-top: 3rem;
-  }
-
-  .xl\:mt-16{
-    margin-top: 4rem;
-  }
-
-  .xl\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .xl\:mt-0{
-    margin-top: 0px;
-  }
-
-  .xl\:mt-36{
-    margin-top: 9rem;
-  }
-
   .xl\:mt-24{
     margin-top: 6rem;
   }
 
-  .xl\:mt-40{
-    margin-top: 10rem;
-  }
-
-  .xl\:mt-44{
-    margin-top: 11rem;
-  }
-
   .xl\:mt-48{
     margin-top: 12rem;
+  }
+
+  .xl\:mt-12{
+    margin-top: 3rem;
   }
 
   .xl\:h-\[29rem\]{
@@ -1836,6 +1699,10 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
+  .xl\:w-3\/4{
+    width: 75%;
+  }
+
   .xl\:w-1\/6{
     width: 16.666667%;
   }
@@ -1844,12 +1711,9 @@ input:checked + .mover-lg:before {
     width: 4rem;
   }
 
-  .xl\:w-3\/5{
-    width: 60%;
-  }
-
-  .xl\:w-3\/4{
-    width: 75%;
+  .xl\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .xl\:items-center{
@@ -1864,10 +1728,6 @@ input:checked + .mover-lg:before {
 
   .xl\:self-center{
     align-self: center;
-  }
-
-  .xl\:p-20{
-    padding: 5rem;
   }
 
   .xl\:px-12{
@@ -1916,20 +1776,16 @@ input:checked + .mover-lg:before {
 }
 
 @media (min-width: 1536px){
-  .\32xl\:mt-10{
-    margin-top: 2.5rem;
-  }
-
-  .\32xl\:mt-14{
-    margin-top: 3.5rem;
-  }
-
   .\32xl\:mt-20{
     margin-top: 5rem;
   }
 
   .\32xl\:mt-64{
     margin-top: 16rem;
+  }
+
+  .\32xl\:mt-14{
+    margin-top: 3.5rem;
   }
 
   .\32xl\:hidden{
@@ -1944,20 +1800,25 @@ input:checked + .mover-lg:before {
     height: 5rem;
   }
 
+  .\32xl\:w-3\/4{
+    width: 75%;
+  }
+
   .\32xl\:w-1\/6{
     width: 16.666667%;
+  }
+
+  .\32xl\:w-3\/5{
+    width: 60%;
   }
 
   .\32xl\:w-20{
     width: 5rem;
   }
 
-  .\32xl\:w-3\/4{
-    width: 75%;
-  }
-
-  .\32xl\:w-3\/5{
-    width: 60%;
+  .\32xl\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .\32xl\:space-x-20 > :not([hidden]) ~ :not([hidden]){
