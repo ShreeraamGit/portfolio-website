@@ -256,3 +256,13 @@ switchOnLg.addEventListener("change", function () {
     toggleLg.classList.add("dark");
   }
 });
+
+/*----------------------------------------------------------------*/
+
+////projects section buttons animation
+
+const projectButtons = document.querySelector(".code");
+projectButtons.addEventListener("mouseover", function (e) {
+  target = e.target;
+  ////console.log(target.firstElementChild);
+});
