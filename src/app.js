@@ -263,6 +263,8 @@ switchOnLg.addEventListener("change", function () {
 
 const projectButtons = document.querySelector(".code");
 projectButtons.addEventListener("mouseover", function (e) {
-  target = e.target;
-  ////console.log(target.firstElementChild);
+  if (e.target.classList.contains("visit-link")) {
+    const hoverButton = e.target;
+    console.log(hoverButton);
+  }
 });
