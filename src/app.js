@@ -205,7 +205,7 @@ dotContainer.addEventListener("click", function (e) {
 });
 
 /*-------------------------------------------------------------*/
-
+/*
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
@@ -225,7 +225,7 @@ sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
-
+*/
 /*-------------------------------------------------------------*/
 
 ///Dark mode enable/disable -- mobile mode
