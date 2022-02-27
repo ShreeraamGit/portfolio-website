@@ -616,6 +616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
+.mr-10{
+  margin-right: 2.5rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -824,12 +828,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.place-content-start{
+  place-content: start;
+}
+
 .place-items-center{
   place-items: center;
 }
 
 .content-center{
   align-content: center;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -850,6 +862,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around{
   justify-content: space-around;
+}
+
+.justify-items-start{
+  justify-items: start;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
@@ -958,6 +974,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-8{
   padding: 2rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-6{

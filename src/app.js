@@ -258,7 +258,7 @@ switchOnLg.addEventListener("change", function () {
 });
 
 /*----------------------------------------------------------------*/
-/*
+
 ////projects section buttons animation
 
 const projectButtons = document.querySelector(".code");
@@ -274,6 +274,7 @@ projectButtons.addEventListener("mouseover", function (e) {
         element.classList.add("underline-offset-4");
         element.classList.add("decoration-1");
       } else {
+        element.classList.add("p-2");
         element.classList.add("bg-gradient-to-r");
         element.classList.add("from-aux-1");
         element.classList.add("to-aux");
@@ -298,4 +299,3 @@ projectButtons.addEventListener("mouseout", function (e) {
     });
   }
 });
-*/
