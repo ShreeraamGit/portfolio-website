@@ -261,41 +261,44 @@ switchOnLg.addEventListener("change", function () {
 
 ////projects section buttons animation
 
-const projectButtons = document.querySelector(".code");
-projectButtons.addEventListener("mouseover", function (e) {
-  if (e.target.classList.contains("visit-link")) {
-    allButtons = document.querySelectorAll(".visit-button");
-    //console.log(allButtons);
-    ///console.log(e.target.parentElement);
-    allButtons.forEach((element) => {
-      if (element !== e.target.parentElement) {
-        element.classList.add("underline");
-        element.classList.add("decoration-solid");
-        element.classList.add("underline-offset-4");
-        element.classList.add("decoration-1");
-      } else {
-        element.classList.add("p-2");
-        element.classList.add("bg-gradient-to-r");
-        element.classList.add("from-aux-1");
-        element.classList.add("to-aux");
-      }
-    });
-  }
-});
+const allSectionsButtons = document.querySelectorAll(".code");
 
-projectButtons.addEventListener("mouseout", function (e) {
-  if (e.target.classList.contains("visit-link")) {
-    allButtons = document.querySelectorAll(".visit-button");
-    //console.log(allButtons);
-    ///console.log(e.target.parentElement);
-    allButtons.forEach((element) => {
-      if (element !== e.target.parentElement) {
-        element.classList.remove("underline");
-      } else {
-        element.classList.remove("bg-gradient-to-r");
-        element.classList.remove("from-aux-1");
-        element.classList.remove("to-aux");
-      }
-    });
-  }
+allSectionsButtons.forEach((element) => {
+  element.addEventListener("mouseover", function (e) {
+    if (e.target.classList.contains("visit-link")) {
+      allButtons = document.querySelectorAll(".visit-button");
+      //console.log(allButtons);
+      ///console.log(e.target.parentElement);
+      allButtons.forEach((element) => {
+        if (element !== e.target.parentElement) {
+          element.classList.add("underline");
+          element.classList.add("decoration-solid");
+          element.classList.add("underline-offset-4");
+          element.classList.add("decoration-1");
+        } else {
+          element.classList.add("p-2");
+          element.classList.add("bg-gradient-to-r");
+          element.classList.add("from-aux-1");
+          element.classList.add("to-aux");
+        }
+      });
+    }
+  });
+
+  element.addEventListener("mouseout", function (e) {
+    if (e.target.classList.contains("visit-link")) {
+      allButtons = document.querySelectorAll(".visit-button");
+      //console.log(allButtons);
+      ///console.log(e.target.parentElement);
+      allButtons.forEach((element) => {
+        if (element !== e.target.parentElement) {
+          element.classList.remove("underline");
+        } else {
+          element.classList.remove("bg-gradient-to-r");
+          element.classList.remove("from-aux-1");
+          element.classList.remove("to-aux");
+        }
+      });
+    }
+  });
 });
