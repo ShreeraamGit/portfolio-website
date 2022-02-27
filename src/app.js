@@ -302,3 +302,40 @@ allSectionsButtons.forEach((element) => {
     }
   });
 });
+
+/*------------------------------------------------------------------*/
+///hire me section animations
+/*
+const allBoxes = document.querySelector(".content-hire");
+allBoxes.addEventListener("mouseover", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("content-box")) {
+    const allContentBoxes = document.querySelectorAll(".content-box");
+    //console.log(allContentBoxes);
+    //console.log(e.target);
+    allContentBoxes.forEach((element) => {
+      if (element !== e.target) {
+        //const title = element.querySelector(".title-hireme");
+        //console.log(title);
+        element.classList.add("opacity-30");
+      }
+    });
+  }
+});
+
+allBoxes.addEventListener("mouseout", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("content-box")) {
+    const allContentBoxes = document.querySelectorAll(".content-box");
+    //console.log(allContentBoxes);
+    //console.log(e.target);
+    allContentBoxes.forEach((element) => {
+      if (element !== e.target) {
+        //const title = element.querySelector(".title-hireme");
+        //console.log(title);
+        element.classList.remove("opacity-30");
+      }
+    });
+  }
+});
+*/

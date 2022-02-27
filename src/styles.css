@@ -752,6 +752,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .table-fixed{
   table-layout: fixed;
 }
@@ -882,6 +886,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1.5rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
+}
+
 .border-2{
   border-width: 2px;
 }
@@ -906,6 +918,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-heading{
   --tw-border-opacity: 1;
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-aux{
@@ -1673,6 +1690,11 @@ input:checked + .mover-lg:before {
     padding-bottom: 0.5rem;
   }
 
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .lg\:pt-28{
     padding-top: 7rem;
   }
@@ -1756,6 +1778,18 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
+  .xl\:h-96{
+    height: 24rem;
+  }
+
+  .xl\:h-12{
+    height: 3rem;
+  }
+
+  .xl\:h-14{
+    height: 3.5rem;
+  }
+
   .xl\:w-3\/4{
     width: 75%;
   }
@@ -1766,6 +1800,18 @@ input:checked + .mover-lg:before {
 
   .xl\:w-16{
     width: 4rem;
+  }
+
+  .xl\:w-96{
+    width: 24rem;
+  }
+
+  .xl\:w-12{
+    width: 3rem;
+  }
+
+  .xl\:w-14{
+    width: 3.5rem;
   }
 
   .xl\:translate-x-0{
@@ -1790,6 +1836,11 @@ input:checked + .mover-lg:before {
   .xl\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .xl\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .xl\:text-4xl{
@@ -1825,6 +1876,11 @@ input:checked + .mover-lg:before {
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .xl\:leading-loose{
