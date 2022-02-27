@@ -141,13 +141,3 @@ input:checked + .mover-lg:before {
 .mover-lg.round-lg:before {
   border-radius: 50%;
 }
-
-.button--active {
-  background: linear-gradient(to right, #ffe66d, #4ecdc4);
-  border-radius: 0.5rem;
-}
-
-.button--notactive {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
-}

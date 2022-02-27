@@ -273,10 +273,10 @@ allSectionsButtons.forEach((element) => {
         if (element !== e.target.parentElement) {
           element.classList.add("underline");
           element.classList.add("decoration-solid");
-          element.classList.add("underline-offset-4");
+          element.classList.add("underline-offset-8");
           element.classList.add("decoration-1");
         } else {
-          element.classList.add("p-2");
+          //element.classList.add("p-2");
           element.classList.add("bg-gradient-to-r");
           element.classList.add("from-aux-1");
           element.classList.add("to-aux");
