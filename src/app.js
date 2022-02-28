@@ -160,19 +160,24 @@ const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
-      `<button class="dots__dot h-3 w-3 border-2 border-content dark:border-main-bg mr-7 rounded-full" data-slide="${i}"></button>`
+      `<button class="dots__dot h-3 w-3 border border-content dark:border-main-bg mr-7 rounded-full" data-slide="${i}"></button>`
     );
   });
 };
 const activateDot = function (slide) {
   document.querySelectorAll(".dots__dot").forEach(function (el) {
+    ////console.log(el);
     el.classList.remove("dots__dot--active");
+    const currentDot = document.querySelector(
+      `.dots__dot[data-slide="${slide}"]`
+    );
+    currentDot.classList.add("dots__dot--active");
   });
 };
 
 gotoSlide(curSlide);
-activateDot(curSlide);
 createDots();
+activateDot(curSlide);
 
 btnRight.addEventListener("click", function () {
   if (curSlide === maxSlides - 1) {
@@ -181,6 +186,7 @@ btnRight.addEventListener("click", function () {
     curSlide++;
   }
   gotoSlide(curSlide);
+  activateDot(curSlide);
 });
 
 btnLeft.addEventListener("click", function () {
@@ -190,6 +196,7 @@ btnLeft.addEventListener("click", function () {
     curSlide--;
   }
   gotoSlide(curSlide);
+  activateDot(curSlide);
 });
 
 ///// dots animation
@@ -201,6 +208,7 @@ dotContainer.addEventListener("click", function (e) {
   if (target.classList.contains("dots__dot")) {
     const slide = target.dataset.slide;
     gotoSlide(slide);
+    activateDot(slide);
   }
 });
 
@@ -275,6 +283,7 @@ allSectionsButtons.forEach((element) => {
           element.classList.add("decoration-solid");
           element.classList.add("underline-offset-8");
           element.classList.add("decoration-1");
+          element.classList.add("opacity-30");
         } else {
           //element.classList.add("p-2");
           element.classList.add("bg-gradient-to-r");
@@ -293,6 +302,7 @@ allSectionsButtons.forEach((element) => {
       allButtons.forEach((element) => {
         if (element !== e.target.parentElement) {
           element.classList.remove("underline");
+          element.classList.remove("opacity-30");
         } else {
           element.classList.remove("bg-gradient-to-r");
           element.classList.remove("from-aux-1");
