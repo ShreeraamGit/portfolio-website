@@ -337,8 +337,10 @@ allBoxes.addEventListener("mouseover", function (e) {
     element.classList.remove("hover:scale-110");
     hoverTab.classList.add("-translate-y-5");
     hoverTab.classList.add("scale-110");
-    hoverTitle.classList.remove("move--img_title");
+    hoverTitle.classList.remove("movedown--img_title");
     hoverContent.classList.remove("hide--hireme_content");
+    hoverTitle.classList.add("moveup--img_title");
+    hoverContent.classList.add("show--hireme_content");
     if (element !== hoverTab) {
       element.classList.add("opacity-20");
     }
@@ -361,8 +363,10 @@ allBoxes.addEventListener("mouseout", function (e) {
   boxes.forEach((element) => {
     hoverTab.classList.remove("-translate-y-5");
     hoverTab.classList.remove("scale-110");
-    hoverTitle.classList.add("move--img_title");
+    hoverTitle.classList.add("movedown--img_title");
     hoverContent.classList.add("hide--hireme_content");
+    hoverTitle.classList.remove("moveup--img_title");
+    hoverContent.classList.remove("show--hireme_content");
     if (element !== hoverTab) {
       element.classList.remove("opacity-20");
     }

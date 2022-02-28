@@ -147,7 +147,16 @@ input:checked + .mover-lg:before {
   transform: translateY(150%);
   transition: transform 1.5s;
 }
-.move--img_title {
+.movedown--img_title {
   transform: translateY(80%);
+  transition: transform 1.5s;
+}
+
+.show--hireme_content {
+  transform: translateY(0%);
+  transition: transform 1.5s;
+}
+.moveup--img_title {
+  transform: translateY(0%);
   transition: transform 1.5s;
 }
