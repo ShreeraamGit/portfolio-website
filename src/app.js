@@ -322,14 +322,23 @@ const boxes = document.querySelectorAll(".content-box");
 allBoxes.addEventListener("mouseover", function (e) {
   e.preventDefault();
   const hoverTab = e.target.closest(".content-box");
-  ///console.log(hoverTab);
+  //console.log(hoverTab);
   ///guard clause
   if (!hoverTab) return;
+  const hoverTitle = e.target
+    .closest(".content-box")
+    .querySelector(".image-title");
+  ////console.log(hoverTitle);
+  const hoverContent = e.target
+    .closest(".content-box")
+    .querySelector(".content");
   boxes.forEach((element) => {
     element.classList.remove("hover:-translate-y-5");
     element.classList.remove("hover:scale-110");
     hoverTab.classList.add("-translate-y-5");
     hoverTab.classList.add("scale-110");
+    hoverTitle.classList.remove("move--img_title");
+    hoverContent.classList.remove("hide--hireme_content");
     if (element !== hoverTab) {
       element.classList.add("opacity-20");
     }
@@ -342,9 +351,18 @@ allBoxes.addEventListener("mouseout", function (e) {
   ///console.log(hoverTab);
   ///guard clause
   if (!hoverTab) return;
+  const hoverTitle = e.target
+    .closest(".content-box")
+    .querySelector(".image-title");
+  ////console.log(hoverTitle);
+  const hoverContent = e.target
+    .closest(".content-box")
+    .querySelector(".content");
   boxes.forEach((element) => {
     hoverTab.classList.remove("-translate-y-5");
     hoverTab.classList.remove("scale-110");
+    hoverTitle.classList.add("move--img_title");
+    hoverContent.classList.add("hide--hireme_content");
     if (element !== hoverTab) {
       element.classList.remove("opacity-20");
     }

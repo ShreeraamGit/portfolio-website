@@ -141,3 +141,13 @@ input:checked + .mover-lg:before {
 .mover-lg.round-lg:before {
   border-radius: 50%;
 }
+
+/* Hire me boxes animations*/
+.hide--hireme_content {
+  transform: translateY(150%);
+  transition: transform 1.5s;
+}
+.move--img_title {
+  transform: translateY(80%);
+  transition: transform 1.5s;
+}
