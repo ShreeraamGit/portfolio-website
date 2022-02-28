@@ -640,8 +640,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
-.h-6{
-  height: 1.5rem;
+.h-\[18px\]{
+  height: 18px;
 }
 
 .h-7{
@@ -706,8 +706,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-6{
-  width: 1.5rem;
+.w-\[18px\]{
+  width: 18px;
 }
 
 .w-7{
@@ -1243,6 +1243,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 1;
 }
 
+/*------Dark/light mode Switch - mobile version-------*/
+
 .switch {
   position: relative;
   display: inline-block;
@@ -1299,6 +1301,8 @@ input:checked + .mover:before {
 .mover.round:before {
   border-radius: 50%;
 }
+
+/*------Dark/light mode Switch - desktop version-------*/
 
 /*dark mode- desktop*/
 
@@ -1695,6 +1699,10 @@ input:checked + .mover-lg:before {
     align-self: center;
   }
 
+  .lg\:scroll-smooth{
+    scroll-behavior: smooth;
+  }
+
   .lg\:rounded-none{
     border-radius: 0px;
   }
@@ -1866,18 +1874,6 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
-  .xl\:h-7{
-    height: 1.75rem;
-  }
-
-  .xl\:h-8{
-    height: 2rem;
-  }
-
-  .xl\:h-9{
-    height: 2.25rem;
-  }
-
   .xl\:w-5{
     width: 1.25rem;
   }
@@ -1906,18 +1902,6 @@ input:checked + .mover-lg:before {
     width: 4rem;
   }
 
-  .xl\:w-7{
-    width: 1.75rem;
-  }
-
-  .xl\:w-8{
-    width: 2rem;
-  }
-
-  .xl\:w-9{
-    width: 2.25rem;
-  }
-
   .xl\:translate-x-0{
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1935,6 +1919,10 @@ input:checked + .mover-lg:before {
 
   .xl\:self-center{
     align-self: center;
+  }
+
+  .xl\:scroll-smooth{
+    scroll-behavior: smooth;
   }
 
   .xl\:px-12{
@@ -2085,6 +2073,10 @@ input:checked + .mover-lg:before {
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\32xl\:scroll-smooth{
+    scroll-behavior: smooth;
   }
 
   .\32xl\:px-12{

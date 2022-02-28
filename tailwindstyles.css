@@ -19,6 +19,8 @@
   background-color: #ff6b6b;
   opacity: 1;
 }
+
+/*------Dark/light mode Switch - mobile version-------*/
 .switch {
   position: relative;
   display: inline-block;
@@ -79,6 +81,7 @@ input:checked + .mover:before {
   border-radius: 50%;
 }
 
+/*------Dark/light mode Switch - desktop version-------*/
 /*dark mode- desktop*/
 .switch-lg {
   position: relative;
