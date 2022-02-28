@@ -160,3 +160,8 @@ input:checked + .mover-lg:before {
   transform: translateY(0%);
   transition: transform 1.5s;
 }
+/*-------vertical line for the connection*/
+.vertical-line {
+  border-left: 1px solid;
+  height: 100px;
+}
