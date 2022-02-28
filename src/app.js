@@ -305,37 +305,38 @@ allSectionsButtons.forEach((element) => {
 
 /*------------------------------------------------------------------*/
 ///hire me section animations
-/*
+
 const allBoxes = document.querySelector(".content-hire");
+const boxes = document.querySelectorAll(".content-box");
+//console.log(boxes);
 allBoxes.addEventListener("mouseover", function (e) {
   e.preventDefault();
-  if (e.target.classList.contains("content-box")) {
-    const allContentBoxes = document.querySelectorAll(".content-box");
-    //console.log(allContentBoxes);
-    //console.log(e.target);
-    allContentBoxes.forEach((element) => {
-      if (element !== e.target) {
-        //const title = element.querySelector(".title-hireme");
-        //console.log(title);
-        element.classList.add("opacity-30");
-      }
-    });
-  }
+  const hoverTab = e.target.closest(".content-box");
+  ///console.log(hoverTab);
+  ///guard clause
+  if (!hoverTab) return;
+  boxes.forEach((element) => {
+    element.classList.remove("hover:-translate-y-5");
+    element.classList.remove("hover:scale-110");
+    hoverTab.classList.add("-translate-y-5");
+    hoverTab.classList.add("scale-110");
+    if (element !== hoverTab) {
+      element.classList.add("opacity-20");
+    }
+  });
 });
 
 allBoxes.addEventListener("mouseout", function (e) {
   e.preventDefault();
-  if (e.target.classList.contains("content-box")) {
-    const allContentBoxes = document.querySelectorAll(".content-box");
-    //console.log(allContentBoxes);
-    //console.log(e.target);
-    allContentBoxes.forEach((element) => {
-      if (element !== e.target) {
-        //const title = element.querySelector(".title-hireme");
-        //console.log(title);
-        element.classList.remove("opacity-30");
-      }
-    });
-  }
+  const hoverTab = e.target.closest(".content-box");
+  ///console.log(hoverTab);
+  ///guard clause
+  if (!hoverTab) return;
+  boxes.forEach((element) => {
+    hoverTab.classList.remove("-translate-y-5");
+    hoverTab.classList.remove("scale-110");
+    if (element !== hoverTab) {
+      element.classList.remove("opacity-20");
+    }
+  });
 });
-*/
