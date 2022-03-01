@@ -644,8 +644,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18px;
 }
 
-.h-7{
-  height: 1.75rem;
+.h-\[21px\]{
+  height: 21px;
 }
 
 .h-10{
@@ -664,6 +664,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-2\/5{
   height: 40%;
+}
+
+.h-7{
+  height: 1.75rem;
 }
 
 .h-2\/4{
@@ -710,8 +714,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 18px;
 }
 
-.w-7{
-  width: 1.75rem;
+.w-\[21px\]{
+  width: 21px;
 }
 
 .w-10{
@@ -730,6 +734,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-9{
   width: 2.25rem;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .w-72{
@@ -1248,8 +1256,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 30px;
+  width: 45px;
+  height: 22px;
 }
 
 .switch input {
@@ -1272,9 +1280,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mover:before {
   position: absolute;
   content: "";
-  height: 22px;
-  width: 22px;
-  left: 6px;
+  height: 15px;
+  width: 15px;
+  left: 2px;
   bottom: 4px;
   background-color: #f7fff7;
   transition: 0.4s;
