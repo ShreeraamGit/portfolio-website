@@ -213,7 +213,7 @@ dotContainer.addEventListener("click", function (e) {
 });
 
 /*-------------------------------------------------------------*/
-/*
+
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
@@ -233,7 +233,7 @@ sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
-*/
+
 /*-------------------------------------------------------------*/
 
 ///Dark mode enable/disable -- mobile mode
@@ -251,17 +251,18 @@ switchOn.addEventListener("change", function () {
 });
 
 ///Dark mode enable/disable -- desktop mode
-const switchOnLg = document.querySelector(".light-on-lg");
-const toggleLg = document.querySelector(".top-html");
-const modeLight = document.querySelector(".light-mode-lg");
-////console.log(modeLight);
-switchOnLg.addEventListener("change", function () {
-  if (switchOnLg.checked) {
-    ///console.log("yes");
-    toggleLg.classList.remove("dark");
-  } else {
-    ////console.log("no");
-    toggleLg.classList.add("dark");
+const toggleDesktop = document.querySelector(".toggle-lg");
+const textChange = document.querySelector(".dark-text");
+//console.log(toggleDesktop);
+toggleDesktop.addEventListener("click", function (e) {
+  target = e.target;
+  if (target.classList.contains("dark-mode")) {
+    toggle.classList.toggle("dark");
+    if (toggle.classList.contains("dark")) {
+      textChange.innerHTML = "Light Mode";
+    } else {
+      textChange.innerHTML = "Dark Mode";
+    }
   }
 });
 
