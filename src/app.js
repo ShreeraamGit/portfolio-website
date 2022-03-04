@@ -162,45 +162,9 @@ gotoSlide(curSlide);
 createDots();
 activateDot(curSlide);
 
-///--------------------Auto Movement of the Slides to the right---///////////
-
-///// wait function with promise resolve
-const wait = function (seconds) {
-  return new Promise(function (resolve) {
-    setTimeout(resolve, seconds * 1000);
-  });
-};
-
-const gotoSlideAuto = function (slideNum) {
-  return new Promise(function (resolve) {
-    const detectSlider = document.querySelector(".slide");
-    gotoSlide(slideNum);
-    detectSlider.addEventListener("transitionend", function () {
-      ///console.log("transition finish");
-      resolve(detectSlider);
-    });
-  });
-};
-const loadNPause = async function () {
-  try {
-    const currentslide = await gotoSlideAuto(0);
-    await wait(3);
-    const secondSlide = await gotoSlideAuto(1);
-    await wait(3);
-    const thirdSlide = await gotoSlideAuto(2);
-    await wait(3);
-    const fourthSlide = await gotoSlideAuto(3);
-    await wait(3);
-  } catch (err) {
-    console.error(err);
-  }
-};
-
-loadNPause();
-
 ///---------Move slides using the Right button----------/////
 
-btnRight.addEventListener("click", function () {
+const nextSlide = function () {
   if (curSlide === maxSlides - 1) {
     curSlide = 0;
   } else {
@@ -208,11 +172,14 @@ btnRight.addEventListener("click", function () {
   }
   gotoSlide(curSlide);
   activateDot(curSlide);
+};
+
+btnRight.addEventListener("click", function () {
+  nextSlide();
 });
 
 ///---------Move slides using the left button----------/////
-
-btnLeft.addEventListener("click", function () {
+const prevSlide = function () {
   if (curSlide === 0) {
     curSlide = maxSlides - 1;
   } else {
@@ -220,6 +187,10 @@ btnLeft.addEventListener("click", function () {
   }
   gotoSlide(curSlide);
   activateDot(curSlide);
+};
+
+btnLeft.addEventListener("click", function () {
+  prevSlide();
 });
 
 /////---------dots animation------------////////////////////
@@ -232,6 +203,11 @@ dotContainer.addEventListener("click", function (e) {
     activateDot(slide);
   }
 });
+
+///--------------------Auto Movement of the Slides to the right---///////////
+setInterval(function () {
+  nextSlide();
+}, 5000);
 
 /*-------------------------------------------------------------*/
 /*
