@@ -608,12 +608,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75rem;
 }
 
-.mr-10{
-  margin-right: 2.5rem;
-}
-
 .mt-24{
   margin-top: 6rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
 }
 
 .inline-block{
@@ -876,10 +876,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .place-items-center{
   place-items: center;
 }
@@ -1115,16 +1111,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 400;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 .font-extralight{
   font-weight: 200;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .leading-loose{
@@ -1772,18 +1768,6 @@ input:checked + .mover-lg:before {
     padding-bottom: 0.5rem;
   }
 
-  .lg\:pt-28{
-    padding-top: 7rem;
-  }
-
-  .lg\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-16{
-    padding-top: 4rem;
-  }
-
   .lg\:pt-14{
     padding-top: 3.5rem;
   }
@@ -1953,14 +1937,6 @@ input:checked + .mover-lg:before {
   .xl\:py-3{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .xl\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .xl\:pt-24{
-    padding-top: 6rem;
   }
 
   .xl\:pt-28{

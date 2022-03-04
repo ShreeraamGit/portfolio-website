@@ -1,9 +1,3 @@
-///// height
-/*
-const h = window.innerHeight;
-const mainSection = document.querySelector(".first-section");
-mainSection.classList.add(`h-${h}px`);
-*/
 /* --------------------------------------------------------------------------------------------- */
 
 ///Hamburger menu
@@ -12,8 +6,6 @@ const navLinks = document.querySelector(".nav-links");
 const openMenu = document.querySelector(".open-menu");
 const closeMenu = document.querySelector(".close-menu");
 const front = document.querySelector(".front-character");
-////console.log(front);
-///console.log(navLinks);
 hamburger.addEventListener("click", function (e) {
   navLinks.classList.add("transition");
   navLinks.classList.add("duration-700");
@@ -30,18 +22,14 @@ closeMenu.addEventListener("click", function (e) {
   closeMenu.classList.add("invisible");
 });
 
-//// nav bar hover states
+////------------------nav bar hover states------------------///////////
 const totalNavItems = document.querySelector(".nav-links");
-///console.log(totalNavItems);
 totalNavItems.addEventListener("mouseover", function (e) {
   target = e.target;
-  ///console.log(target.parentElement);
   if (target.classList.contains("nav__link")) {
     const others = document.querySelectorAll(".nav__item");
-    ///console.log(others);
     others.forEach((element) => {
       if (element !== target.parentElement) {
-        ///console.log(element.children);
         element.classList.add("transition");
         element.classList.add("duration-500");
         element.classList.add("opacity-30");
@@ -55,13 +43,10 @@ totalNavItems.addEventListener("mouseover", function (e) {
 });
 totalNavItems.addEventListener("mouseout", function (e) {
   target = e.target;
-  ///console.log(target.parentElement);
   if (target.classList.contains("nav__link")) {
     const others = document.querySelectorAll(".nav__item");
-    ///console.log(others);
     others.forEach((element) => {
       if (element !== target.parentElement) {
-        ///console.log(element.children);
         element.classList.remove("opacity-30");
       } else {
         element.classList.remove("underline");
@@ -70,6 +55,7 @@ totalNavItems.addEventListener("mouseout", function (e) {
   }
 });
 
+//////----------nav bar click to jump---------////////////////////////
 totalNavItems.addEventListener("click", function (e) {
   if (target.classList.contains("nav__link")) {
     navLinks.classList.remove("translate-x-0");
@@ -115,7 +101,6 @@ companiesBox.addEventListener("click", function (e) {
   e.preventDefault();
   target = e.target;
   if (target.classList.contains("exp__comp")) {
-    ///console.log(target.dataset.tab);
     const others = target.closest(".exp-line").querySelectorAll(".exp");
     const selectedCompany = target.parentElement;
     const expContent = document.querySelectorAll(".exp__content");
@@ -142,6 +127,7 @@ companiesBox.addEventListener("click", function (e) {
 ///slider animation
 
 const slides = document.querySelectorAll(".slide");
+///console.log(slides);
 const maxSlides = slides.length;
 const btnRight = document.querySelector(".button-right");
 const btnLeft = document.querySelector(".button-left");
@@ -164,7 +150,6 @@ const createDots = function () {
 };
 const activateDot = function (slide) {
   document.querySelectorAll(".dots__dot").forEach(function (el) {
-    ////console.log(el);
     el.classList.remove("dots__dot--active");
     const currentDot = document.querySelector(
       `.dots__dot[data-slide="${slide}"]`
@@ -176,6 +161,42 @@ const activateDot = function (slide) {
 gotoSlide(curSlide);
 createDots();
 activateDot(curSlide);
+
+///--------------------Auto Movement of the Slides to the right---///////////
+
+///// wait function with promise resolve
+const wait = function (seconds) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, seconds * 1000);
+  });
+};
+
+const gotoSlideAuto = function (slideNum) {
+  return new Promise(function (resolve) {
+    const detectSlider = document.querySelector(".slide");
+    gotoSlide(slideNum);
+    detectSlider.addEventListener("transitionend", function () {
+      ///console.log("transition finish");
+      resolve(detectSlider);
+    });
+  });
+};
+const loadNPause = async function () {
+  try {
+    const currentslide = await gotoSlideAuto(0);
+    await wait(5);
+    const secondSlide = await gotoSlideAuto(1);
+    await wait(5);
+    const thirdSlide = await gotoSlideAuto(2);
+    await wait(5);
+    const fourthSlide = await gotoSlideAuto(3);
+    await wait(5);
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+loadNPause();
 
 ///---------Move slides using the Right button----------/////
 
@@ -205,7 +226,6 @@ btnLeft.addEventListener("click", function () {
 
 dotContainer.addEventListener("click", function (e) {
   const target = e.target;
-  ///console.log(target);
   if (target.classList.contains("dots__dot")) {
     const slide = target.dataset.slide;
     gotoSlide(slide);
@@ -214,12 +234,11 @@ dotContainer.addEventListener("click", function (e) {
 });
 
 /*-------------------------------------------------------------*/
-
+/*
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  ///console.log(entry);
   if (!entry.isIntersecting) {
     return;
   } else {
@@ -234,7 +253,7 @@ sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
-
+*/
 /*-------------------------------------------------------------*/
 
 ///Dark mode enable/disable -- mobile mode
@@ -243,10 +262,8 @@ const toggle = document.querySelector(".top-html");
 
 switchOn.addEventListener("change", function () {
   if (switchOn.checked) {
-    ///console.log("yes");
     toggle.classList.remove("dark");
   } else {
-    ///console.log("no");
     toggle.classList.add("dark");
   }
 });
@@ -254,7 +271,6 @@ switchOn.addEventListener("change", function () {
 ///Dark mode enable/disable -- desktop mode
 const toggleDesktop = document.querySelector(".toggle-lg");
 const textChange = document.querySelector(".dark-text");
-//console.log(toggleDesktop);
 toggleDesktop.addEventListener("click", function (e) {
   target = e.target;
   if (target.classList.contains("dark-mode")) {
@@ -277,8 +293,6 @@ allSectionsButtons.forEach((element) => {
   element.addEventListener("mouseover", function (e) {
     if (e.target.classList.contains("visit-link")) {
       allButtons = document.querySelectorAll(".visit-button");
-      //console.log(allButtons);
-      ///console.log(e.target.parentElement);
       allButtons.forEach((element) => {
         if (element !== e.target.parentElement) {
           element.classList.add("underline");
@@ -287,7 +301,6 @@ allSectionsButtons.forEach((element) => {
           element.classList.add("decoration-1");
           element.classList.add("opacity-30");
         } else {
-          //element.classList.add("p-2");
           element.classList.add("bg-gradient-to-r");
           element.classList.add("from-aux-1");
           element.classList.add("to-aux");
@@ -299,8 +312,6 @@ allSectionsButtons.forEach((element) => {
   element.addEventListener("mouseout", function (e) {
     if (e.target.classList.contains("visit-link")) {
       allButtons = document.querySelectorAll(".visit-button");
-      //console.log(allButtons);
-      ///console.log(e.target.parentElement);
       allButtons.forEach((element) => {
         if (element !== e.target.parentElement) {
           element.classList.remove("underline");
@@ -320,17 +331,13 @@ allSectionsButtons.forEach((element) => {
 
 const allBoxes = document.querySelector(".content-hire");
 const boxes = document.querySelectorAll(".content-box");
-//console.log(boxes);
 allBoxes.addEventListener("mouseover", function (e) {
   e.preventDefault();
   const hoverTab = e.target.closest(".content-box");
-  //console.log(hoverTab);
-  ///guard clause
   if (!hoverTab) return;
   const hoverTitle = e.target
     .closest(".content-box")
     .querySelector(".image-title");
-  ////console.log(hoverTitle);
   const hoverContent = e.target
     .closest(".content-box")
     .querySelector(".content");
@@ -352,13 +359,11 @@ allBoxes.addEventListener("mouseover", function (e) {
 allBoxes.addEventListener("mouseout", function (e) {
   e.preventDefault();
   const hoverTab = e.target.closest(".content-box");
-  ///console.log(hoverTab);
   ///guard clause
   if (!hoverTab) return;
   const hoverTitle = e.target
     .closest(".content-box")
     .querySelector(".image-title");
-  ////console.log(hoverTitle);
   const hoverContent = e.target
     .closest(".content-box")
     .querySelector(".content");
