@@ -184,13 +184,13 @@ const gotoSlideAuto = function (slideNum) {
 const loadNPause = async function () {
   try {
     const currentslide = await gotoSlideAuto(0);
-    await wait(5);
+    await wait(3);
     const secondSlide = await gotoSlideAuto(1);
-    await wait(5);
+    await wait(3);
     const thirdSlide = await gotoSlideAuto(2);
-    await wait(5);
+    await wait(3);
     const fourthSlide = await gotoSlideAuto(3);
-    await wait(5);
+    await wait(3);
   } catch (err) {
     console.error(err);
   }
