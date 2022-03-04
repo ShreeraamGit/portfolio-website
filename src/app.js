@@ -143,11 +143,9 @@ companiesBox.addEventListener("click", function (e) {
 
 const slides = document.querySelectorAll(".slide");
 const maxSlides = slides.length;
-///console.log(maxSlides);
 const btnRight = document.querySelector(".button-right");
 const btnLeft = document.querySelector(".button-left");
 const dotContainer = document.querySelector(".dots");
-//console.log(dotContainer);
 let curSlide = 0;
 
 const gotoSlide = function (slideNum) {
@@ -179,6 +177,8 @@ gotoSlide(curSlide);
 createDots();
 activateDot(curSlide);
 
+///---------Move slides using the Right button----------/////
+
 btnRight.addEventListener("click", function () {
   if (curSlide === maxSlides - 1) {
     curSlide = 0;
@@ -188,6 +188,8 @@ btnRight.addEventListener("click", function () {
   gotoSlide(curSlide);
   activateDot(curSlide);
 });
+
+///---------Move slides using the left button----------/////
 
 btnLeft.addEventListener("click", function () {
   if (curSlide === 0) {
@@ -199,8 +201,7 @@ btnLeft.addEventListener("click", function () {
   activateDot(curSlide);
 });
 
-///// dots animation
-////console.log(dotContainer);
+/////---------dots animation------------////////////////////
 
 dotContainer.addEventListener("click", function (e) {
   const target = e.target;
