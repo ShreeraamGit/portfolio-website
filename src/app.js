@@ -207,7 +207,7 @@ dotContainer.addEventListener("click", function (e) {
 ///--------------------Auto Movement of the Slides to the right---///////////
 setInterval(function () {
   nextSlide();
-}, 5000);
+}, 10000);
 
 /*-------------------------------------------------------------*/
 
