@@ -1208,12 +1208,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.transition-opacity{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-all{
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1222,6 +1216,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .delay-300{
   transition-delay: 300ms;
+}
+
+.delay-1000{
+  transition-delay: 1000ms;
+}
+
+.delay-500{
+  transition-delay: 500ms;
 }
 
 .duration-700{
@@ -1246,7 +1248,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(10rem);
+  transform: translateX(20rem);
 }
 
 .dots__dot--active {
