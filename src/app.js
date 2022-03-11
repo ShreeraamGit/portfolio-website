@@ -216,14 +216,14 @@ const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) {
-    return;
+    entry.target.classList.add("section--hidden");
   } else {
     entry.target.classList.remove("section--hidden");
   }
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.15,
 });
 sections.forEach(function (section) {
   sectionObserver.observe(section);
