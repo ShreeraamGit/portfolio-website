@@ -1149,6 +1149,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 107 107 / var(--tw-text-opacity));
 }
 
+.text-main-bg{
+  --tw-text-opacity: 1;
+  color: rgb(247 255 247 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1610,6 +1615,14 @@ input:checked + .mover-lg:before {
     height: 3.5rem;
   }
 
+  .lg\:h-7{
+    height: 1.75rem;
+  }
+
+  .lg\:h-6{
+    height: 1.5rem;
+  }
+
   .lg\:min-h-0{
     min-height: 0px;
   }
@@ -1670,6 +1683,14 @@ input:checked + .mover-lg:before {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-7{
+    width: 1.75rem;
+  }
+
+  .lg\:w-6{
+    width: 1.5rem;
   }
 
   .lg\:translate-x-0{
@@ -1908,6 +1929,10 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
+  .xl\:h-8{
+    height: 2rem;
+  }
+
   .xl\:w-5{
     width: 1.25rem;
   }
@@ -1938,6 +1963,14 @@ input:checked + .mover-lg:before {
 
   .xl\:w-16{
     width: 4rem;
+  }
+
+  .xl\:w-8{
+    width: 2rem;
+  }
+
+  .xl\:w-7{
+    width: 1.75rem;
   }
 
   .xl\:translate-x-0{
