@@ -249,7 +249,7 @@ const toggleDesktop = document.querySelector(".toggle-lg");
 const textChange = document.querySelector(".dark-text");
 const iconChangeLight = document.querySelector(".moon");
 const iconChangeDark = document.querySelector(".sun");
-console.log(iconChangeDark);
+
 toggleDesktop.addEventListener("click", function (e) {
   target = e.target;
   if (target.classList.contains("dark-mode")) {
