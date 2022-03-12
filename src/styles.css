@@ -1190,6 +1190,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-underline-offset: 8px;
 }
 
+.underline-offset-4{
+  text-underline-offset: 4px;
+}
+
 .opacity-30{
   opacity: 0.3;
 }
@@ -1242,12 +1246,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 500ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-1000{
   transition-duration: 1000ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .slide {

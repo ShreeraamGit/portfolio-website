@@ -8,7 +8,9 @@
     "server": "servor src index.html 8080 --browse --reload",
     "dev": "run-p \"server\" \"tailwind:build:dev\"",
     "tailwind:build:prod": "postcss tailwindstyles.css -o ./src/styles.css",
-    "prod": "npm run tailwind:build:prod"
+    "prod": "npm run tailwind:build:prod",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "",
   "license": "ISC",
