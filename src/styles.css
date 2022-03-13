@@ -698,6 +698,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.h-\[45rem\]{
+  height: 45rem;
+}
+
+.h-\[50rem\]{
+  height: 50rem;
+}
+
+.h-\[55rem\]{
+  height: 55rem;
+}
+
+.h-\[48rem\]{
+  height: 48rem;
+}
+
+.h-\[49rem\]{
+  height: 49rem;
+}
+
+.h-\[47rem\]{
+  height: 47rem;
+}
+
+.h-\[43rem\]{
+  height: 43rem;
+}
+
+.h-\[44rem\]{
+  height: 44rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -970,6 +1006,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-heading{
   --tw-border-opacity: 1;
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
+}
+
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-aux{
@@ -1619,6 +1660,14 @@ input:checked + .mover-lg:before {
     height: 3.5rem;
   }
 
+  .lg\:h-12{
+    height: 3rem;
+  }
+
+  .lg\:h-10{
+    height: 2.5rem;
+  }
+
   .lg\:min-h-0{
     min-height: 0px;
   }
@@ -1683,6 +1732,14 @@ input:checked + .mover-lg:before {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-12{
+    width: 3rem;
+  }
+
+  .lg\:w-10{
+    width: 2.5rem;
   }
 
   .lg\:translate-x-0{
@@ -1921,6 +1978,22 @@ input:checked + .mover-lg:before {
     height: 4rem;
   }
 
+  .xl\:h-10{
+    height: 2.5rem;
+  }
+
+  .xl\:h-\[40rem\]{
+    height: 40rem;
+  }
+
+  .xl\:h-\[43rem\]{
+    height: 43rem;
+  }
+
+  .xl\:h-\[44rem\]{
+    height: 44rem;
+  }
+
   .xl\:w-5{
     width: 1.25rem;
   }
@@ -1957,6 +2030,10 @@ input:checked + .mover-lg:before {
     width: 4rem;
   }
 
+  .xl\:w-10{
+    width: 2.5rem;
+  }
+
   .xl\:translate-x-0{
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1964,6 +2041,10 @@ input:checked + .mover-lg:before {
 
   .xl\:scroll-mt-32{
     scroll-margin-top: 8rem;
+  }
+
+  .xl\:scroll-mt-24{
+    scroll-margin-top: 6rem;
   }
 
   .xl\:items-center{
@@ -2093,6 +2174,14 @@ input:checked + .mover-lg:before {
 
   .\32xl\:h-20{
     height: 5rem;
+  }
+
+  .\32xl\:h-\[46rem\]{
+    height: 46rem;
+  }
+
+  .\32xl\:h-\[47rem\]{
+    height: 47rem;
   }
 
   .\32xl\:w-6{
