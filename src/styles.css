@@ -678,8 +678,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
-.h-\[35rem\]{
-  height: 35rem;
+.h-\[44rem\]{
+  height: 44rem;
 }
 
 .h-12{
@@ -698,40 +698,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4rem;
 }
 
-.h-\[40rem\]{
-  height: 40rem;
-}
-
-.h-\[45rem\]{
-  height: 45rem;
-}
-
-.h-\[50rem\]{
-  height: 50rem;
-}
-
-.h-\[55rem\]{
-  height: 55rem;
-}
-
-.h-\[48rem\]{
-  height: 48rem;
-}
-
-.h-\[49rem\]{
-  height: 49rem;
+.h-\[46rem\]{
+  height: 46rem;
 }
 
 .h-\[47rem\]{
   height: 47rem;
 }
 
-.h-\[43rem\]{
-  height: 43rem;
+.h-\[48rem\]{
+  height: 48rem;
 }
 
-.h-\[44rem\]{
-  height: 44rem;
+.h-\[50rem\]{
+  height: 50rem;
 }
 
 .min-h-screen{
@@ -982,6 +962,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1.5rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1008,11 +992,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
 }
 
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
 .bg-aux{
   --tw-bg-opacity: 1;
   background-color: rgb(78 205 196 / var(--tw-bg-opacity));
@@ -1021,6 +1000,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-main-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(247 255 247 / var(--tw-bg-opacity));
+}
+
+.bg-heading{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 107 107 / var(--tw-bg-opacity));
+}
+
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -1168,10 +1157,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.font-extralight{
-  font-weight: 200;
-}
-
 .leading-loose{
   line-height: 2;
 }
@@ -1252,6 +1237,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.4;
 }
 
+.opacity-10{
+  opacity: 0.1;
+}
+
+.opacity-25{
+  opacity: 0.25;
+}
+
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1268,6 +1261,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .transition-all{
   transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1660,14 +1659,6 @@ input:checked + .mover-lg:before {
     height: 3.5rem;
   }
 
-  .lg\:h-12{
-    height: 3rem;
-  }
-
-  .lg\:h-10{
-    height: 2.5rem;
-  }
-
   .lg\:min-h-0{
     min-height: 0px;
   }
@@ -1732,14 +1723,6 @@ input:checked + .mover-lg:before {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-12{
-    width: 3rem;
-  }
-
-  .lg\:w-10{
-    width: 2.5rem;
   }
 
   .lg\:translate-x-0{
@@ -1966,6 +1949,10 @@ input:checked + .mover-lg:before {
     height: 28rem;
   }
 
+  .xl\:h-\[44rem\]{
+    height: 44rem;
+  }
+
   .xl\:h-14{
     height: 3.5rem;
   }
@@ -1976,22 +1963,6 @@ input:checked + .mover-lg:before {
 
   .xl\:h-16{
     height: 4rem;
-  }
-
-  .xl\:h-10{
-    height: 2.5rem;
-  }
-
-  .xl\:h-\[40rem\]{
-    height: 40rem;
-  }
-
-  .xl\:h-\[43rem\]{
-    height: 43rem;
-  }
-
-  .xl\:h-\[44rem\]{
-    height: 44rem;
   }
 
   .xl\:w-5{
@@ -2028,10 +1999,6 @@ input:checked + .mover-lg:before {
 
   .xl\:w-16{
     width: 4rem;
-  }
-
-  .xl\:w-10{
-    width: 2.5rem;
   }
 
   .xl\:translate-x-0{
@@ -2164,6 +2131,10 @@ input:checked + .mover-lg:before {
     height: 35rem;
   }
 
+  .\32xl\:h-\[47rem\]{
+    height: 47rem;
+  }
+
   .\32xl\:h-16{
     height: 4rem;
   }
@@ -2174,14 +2145,6 @@ input:checked + .mover-lg:before {
 
   .\32xl\:h-20{
     height: 5rem;
-  }
-
-  .\32xl\:h-\[46rem\]{
-    height: 46rem;
-  }
-
-  .\32xl\:h-\[47rem\]{
-    height: 47rem;
   }
 
   .\32xl\:w-6{
@@ -2198,10 +2161,6 @@ input:checked + .mover-lg:before {
 
   .\32xl\:w-\[30rem\]{
     width: 30rem;
-  }
-
-  .\32xl\:w-3\/5{
-    width: 60%;
   }
 
   .\32xl\:w-2\/5{

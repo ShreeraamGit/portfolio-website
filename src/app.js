@@ -78,7 +78,7 @@ box1.addEventListener("mouseover", function (e) {
   box2.classList.add("duration-500");
   box2.classList.add("translate-x-2");
   box2.classList.add("translate-y-2");
-  box1.classList.remove("bg-aux");
+  box1.classList.remove("bg-gradient-to-r");
   box1.classList.add("transition");
   box1.classList.add("duration-500");
 });
@@ -88,7 +88,7 @@ box1.addEventListener("mouseout", function (e) {
   box2.classList.add("duration-500");
   box2.classList.remove("translate-x-2");
   box2.classList.remove("translate-y-2");
-  box1.classList.add("bg-aux");
+  box1.classList.add("bg-gradient-to-r");
 });
 
 /* --------------------------------------------------------------------------------------------- */
@@ -204,11 +204,12 @@ dotContainer.addEventListener("click", function (e) {
   }
 });
 
+/*
 ///--------------------Auto Movement of the Slides to the right---///////////
 setInterval(function () {
   nextSlide();
 }, 10000);
-
+*/
 /*-------------------------------------------------------------*/
 /*
 /// Reveal Sections animations
