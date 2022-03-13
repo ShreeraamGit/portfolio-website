@@ -204,12 +204,11 @@ dotContainer.addEventListener("click", function (e) {
   }
 });
 
-/*
 ///--------------------Auto Movement of the Slides to the right---///////////
 setInterval(function () {
   nextSlide();
 }, 10000);
-*/
+
 /*-------------------------------------------------------------*/
 /*
 /// Reveal Sections animations
