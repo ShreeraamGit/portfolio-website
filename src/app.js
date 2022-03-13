@@ -76,19 +76,29 @@ box1.addEventListener("mouseover", function (e) {
   e.preventDefault();
   box2.classList.add("transition");
   box2.classList.add("duration-500");
+  box3.classList.add("transition-all");
+  box3.classList.add("duration-500");
+  box1.classList.add("transition-all");
+  box1.classList.add("duration-500");
   box2.classList.add("translate-x-2");
   box2.classList.add("translate-y-2");
   box1.classList.remove("bg-gradient-to-r");
+  box1.classList.remove("dark:bg-gradient-to-r");
   box1.classList.add("transition");
   box1.classList.add("duration-500");
 });
 box1.addEventListener("mouseout", function (e) {
   e.preventDefault();
+  box1.classList.add("transition-all");
+  box1.classList.add("duration-500");
   box2.classList.add("transition");
   box2.classList.add("duration-500");
+  box3.classList.add("transition-all");
+  box3.classList.add("duration-500");
   box2.classList.remove("translate-x-2");
   box2.classList.remove("translate-y-2");
   box1.classList.add("bg-gradient-to-r");
+  box1.classList.add("dark:bg-gradient-to-r");
 });
 
 /* --------------------------------------------------------------------------------------------- */
@@ -204,12 +214,11 @@ dotContainer.addEventListener("click", function (e) {
   }
 });
 
-/*
 ///--------------------Auto Movement of the Slides to the right---///////////
 setInterval(function () {
   nextSlide();
 }, 10000);
-*/
+
 /*-------------------------------------------------------------*/
 /*
 /// Reveal Sections animations
@@ -315,6 +324,7 @@ allSectionsButtons.forEach((element) => {
 
 const allBoxes = document.querySelector(".content-hire");
 const boxes = document.querySelectorAll(".content-box");
+//const readMore = document.querySelectorAll(".readmore");
 allBoxes.addEventListener("mouseover", function (e) {
   e.preventDefault();
   const hoverTab = e.target.closest(".content-box");
@@ -358,8 +368,15 @@ allBoxes.addEventListener("mouseout", function (e) {
     hoverContent.classList.add("hide--hireme_content");
     hoverTitle.classList.remove("moveup--img_title");
     hoverContent.classList.remove("show--hireme_content");
+
     if (element !== hoverTab) {
       element.classList.remove("opacity-20");
     }
   });
 });
+
+const wait = function (seconds) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, seconds * 1000);
+  });
+};

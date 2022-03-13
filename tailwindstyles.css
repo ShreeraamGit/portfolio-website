@@ -163,6 +163,13 @@ input:checked + .mover-lg:before {
   transform: translateY(0%);
   transition: transform 1.5s;
 }
+.hide--readmore {
+  opacity: 0;
+}
+
+.show--readmore {
+  opacity: 100%;
+}
 /*-------vertical line for the connection*/
 .vertical-line {
   border-left: 1px solid;

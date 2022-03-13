@@ -678,8 +678,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
-.h-\[44rem\]{
-  height: 44rem;
+.h-\[50rem\]{
+  height: 50rem;
 }
 
 .h-12{
@@ -696,22 +696,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-16{
   height: 4rem;
-}
-
-.h-\[46rem\]{
-  height: 46rem;
-}
-
-.h-\[47rem\]{
-  height: 47rem;
-}
-
-.h-\[48rem\]{
-  height: 48rem;
-}
-
-.h-\[50rem\]{
-  height: 50rem;
 }
 
 .min-h-screen{
@@ -962,10 +946,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1.5rem;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .border{
   border-width: 1px;
 }
@@ -992,24 +972,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(255 107 107 / var(--tw-border-opacity));
 }
 
-.bg-aux{
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 205 196 / var(--tw-bg-opacity));
-}
-
 .bg-main-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(247 255 247 / var(--tw-bg-opacity));
-}
-
-.bg-heading{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 107 107 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r{
@@ -1233,18 +1198,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.2;
 }
 
-.opacity-40{
-  opacity: 0.4;
-}
-
-.opacity-10{
-  opacity: 0.1;
-}
-
-.opacity-25{
-  opacity: 0.25;
-}
-
 .shadow-xl{
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1460,6 +1413,14 @@ input:checked + .mover-lg:before {
   transition: transform 1.5s;
 }
 
+.hide--readmore {
+  opacity: 0;
+}
+
+.show--readmore {
+  opacity: 100%;
+}
+
 /*-------vertical line for the connection*/
 
 .vertical-line {
@@ -1529,6 +1490,19 @@ input:checked + .mover-lg:before {
 .dark .dark\:bg-content{
   --tw-bg-opacity: 1;
   background-color: rgb(26 83 92 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.dark .dark\:from-aux{
+  --tw-gradient-from: #4ECDC4;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(78 205 196 / 0));
+}
+
+.dark .dark\:to-main-bg{
+  --tw-gradient-to: #F7FFF7;
 }
 
 .dark .dark\:text-main-bg{
