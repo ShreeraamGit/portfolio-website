@@ -223,19 +223,21 @@ setInterval(function () {
 
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
+
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
-  if (!entry.isIntersecting) {
-    entry.target.classList.add("section--hidden");
-  } else {
-    entry.target.classList.remove("section--hidden");
-  }
+  //console.log(entry);
+  if (!entry.isIntersecting) return;
+
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
 };
+
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
   threshold: 0.2,
 });
+
 sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
