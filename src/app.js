@@ -227,14 +227,14 @@ const revealSection = function (entries, observer) {
   const [entry] = entries;
   console.log(entry);
   if (!entry.isIntersecting) {
-    return;
+    entry.target.classList.add("section--hidden");
   } else {
     entry.target.classList.remove("section--hidden");
   }
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.135,
+  threshold: 0.2,
 });
 sections.forEach(function (section) {
   sectionObserver.observe(section);
