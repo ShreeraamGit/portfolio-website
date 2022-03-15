@@ -1,4 +1,5 @@
 /* --------------------------------------------------------------------------------------------- */
+////Smooth -scroll
 
 ///Hamburger menu
 const hamburger = document.querySelector(".open-menu");
@@ -227,15 +228,17 @@ const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
   //console.log(entry);
-  if (!entry.isIntersecting) return;
-
-  entry.target.classList.remove("section--hidden");
-  observer.unobserve(entry.target);
+  if (!entry.isIntersecting) {
+    entry.target.classList.add("section--hidden");
+  } else {
+    entry.target.classList.remove("section--hidden");
+  }
+  //observer.unobserve(entry.target);
 };
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.2,
+  threshold: 0.15,
 });
 
 sections.forEach(function (section) {
