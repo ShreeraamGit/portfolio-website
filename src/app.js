@@ -227,7 +227,7 @@ const revealSection = function (entries, observer) {
   const [entry] = entries;
   //console.log(entry);
   if (!entry.isIntersecting) {
-    //entry.target.classList.add("section--hidden");
+    entry.target.classList.add("section--hidden");
   } else {
     entry.target.classList.remove("section--hidden");
   }
