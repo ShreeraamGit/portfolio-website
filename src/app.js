@@ -217,7 +217,7 @@ dotContainer.addEventListener("click", function (e) {
 ///--------------------Auto Movement of the Slides to the right---///////////
 setInterval(function () {
   nextSlide();
-}, 10000);
+}, 12000);
 
 /*-------------------------------------------------------------*/
 
@@ -233,7 +233,7 @@ const revealSection = function (entries, observer) {
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.1,
+  threshold: 0.12,
 });
 sections.forEach(function (section) {
   sectionObserver.observe(section);

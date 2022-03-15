@@ -678,8 +678,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 18rem;
 }
 
-.h-\[50rem\]{
-  height: 50rem;
+.h-\[55rem\]{
+  height: 55rem;
 }
 
 .h-12{
@@ -696,10 +696,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-16{
   height: 4rem;
-}
-
-.h-\[55rem\]{
-  height: 55rem;
 }
 
 .min-h-screen{
