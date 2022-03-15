@@ -155,7 +155,7 @@ const createDots = function () {
   slides.forEach(function (_, i) {
     dotContainer.insertAdjacentHTML(
       "beforeend",
-      `<button class="dots__dot h-4 w-4 lg:h-4 lg:w-4 xl:h-5 xl:w-5 2xl:h-6 2xl:w-6 border border-content dark:border-main-bg mr-7 rounded-full" data-slide="${i}"></button>`
+      `<button class="dots__dot h-4 w-4 lg:h-4 lg:w-4 xl:h-4 xl:w-4 2xl:h-4 2xl:w-4 border border-content dark:border-main-bg rounded-full" data-slide="${i}"></button>`
     );
   });
 };
@@ -221,7 +221,7 @@ setInterval(function () {
 }, 12000);
 
 /*-------------------------------------------------------------*/
-
+/*
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
 
@@ -238,13 +238,14 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.2,
 });
 
 sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+*/
 
 /*-------------------------------------------------------------*/
 
