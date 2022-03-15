@@ -225,16 +225,16 @@ setInterval(function () {
 const sections = document.querySelectorAll(".section");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-  console.log(entry);
+  //console.log(entry);
   if (!entry.isIntersecting) {
-    entry.target.classList.add("section--hidden");
+    //entry.target.classList.add("section--hidden");
   } else {
     entry.target.classList.remove("section--hidden");
   }
 };
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.15,
+  threshold: 0.1,
 });
 sections.forEach(function (section) {
   sectionObserver.observe(section);
