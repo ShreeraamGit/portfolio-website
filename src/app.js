@@ -221,7 +221,7 @@ setInterval(function () {
 }, 12000);
 
 /*-------------------------------------------------------------*/
-/*
+
 /// Reveal Sections animations
 const sections = document.querySelectorAll(".section");
 
@@ -245,7 +245,6 @@ sections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
-*/
 
 /*-------------------------------------------------------------*/
 
