@@ -1,5 +1,14 @@
 /* --------------------------------------------------------------------------------------------- */
-////Smooth -scroll
+////Go to start page at load
+if (history.scrollRestoration) {
+  history.scrollRestoration = "manual";
+} else {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+}
+
+/*--------------------------------------------------------------------------------------------------*/
 
 ///Hamburger menu
 const hamburger = document.querySelector(".open-menu");
@@ -223,6 +232,7 @@ setInterval(function () {
 /*-------------------------------------------------------------*/
 
 /// Reveal Sections animations
+
 const sections = document.querySelectorAll(".section");
 
 const revealSection = function (entries, observer) {
@@ -238,7 +248,7 @@ const revealSection = function (entries, observer) {
 
 const sectionObserver = new IntersectionObserver(revealSection, {
   root: null,
-  threshold: 0.02,
+  threshold: 0.15,
 });
 
 sections.forEach(function (section) {
