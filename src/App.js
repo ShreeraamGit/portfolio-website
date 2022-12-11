@@ -1,5 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import { Home, Projects, Blogs, MainPage } from './routes';
+import { Home, MainPage } from './routes';
+import React, { Suspense, lazy } from 'react';
+
+const Blogs = lazy(() => import('./routes/Blogs'));
+const Projects = lazy(() => import('./routes/Projects'));
 
 function App() {
   return (
