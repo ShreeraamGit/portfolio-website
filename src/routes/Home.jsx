@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <div className="">
       <Hero />
-      <div className="gradient-04 z-0" />
       <div className="relative">
         <About />
         <div className="gradient-03 z-0" />

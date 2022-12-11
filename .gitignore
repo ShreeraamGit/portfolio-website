@@ -25,3 +25,6 @@ yarn-error.log*
 #backend
 backend/
 
+
+# Local Netlify folder
+.netlify
