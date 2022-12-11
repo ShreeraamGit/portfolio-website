@@ -3,7 +3,7 @@ import { BlogsHero, BlogsList } from '../sections';
 
 const Blogs = () => {
   return (
-    <section className="h-screen">
+    <section className="h-fit">
       <BlogsHero />
       <BlogsList />
     </section>
