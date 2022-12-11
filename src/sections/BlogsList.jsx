@@ -19,7 +19,7 @@ const BlogsList = () => {
       <div
         className={`${styles.innerWidth} mx-auto gap-12 relative justify-start flex lg:flex-row lg:flex-wrap flex-col `}
       >
-        <div className="gradient-03 z-0" />
+        <div className="gradient-02 z-0" />
         {blogs.map((items) => (
           <Blogcard key={items._id} blogs={items} />
         ))}
