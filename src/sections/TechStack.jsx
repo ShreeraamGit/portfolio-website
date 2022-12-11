@@ -11,7 +11,7 @@ const TechStack = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.paddings} ${styles.innerWidth} mx-auto ${styles.flexCenter} flex flex-col relative w-full md:-mt-[20px] -mt-[12px]`}
     >
       <TypingText title="|  My Tech-Stack" textStyles="text-center" />
