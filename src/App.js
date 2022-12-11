@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Home, Projects, Blogs, MainPage } from './routes';
+import client from '@sanity/client';
+import { useEffect } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<MainPage></MainPage>}>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />}>
+            <Route
+              path=":projectsId"
+              element={<div className="">Inside Projects Page</div>}
+            />
+          </Route>
+          <Route path="blogs" element={<Blogs />}>
+            <Route
+              path=":blogsId"
+              element={<div className="">Inside Projects Page</div>}
+            />
+          </Route>
+        </Route>
+      </Routes>
+    </>
   );
 }
 
