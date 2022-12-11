@@ -14,7 +14,6 @@ export const fetchBlogs = createAsyncThunk('blogs/fetchBlogsData', async () => {
 
 const initialState = {
   blogs: [],
-  author: null,
   loading: null,
   status: 'idle', //'idle | 'loading' | 'succeeded'| 'failed'
   error: null,
