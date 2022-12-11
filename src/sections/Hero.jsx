@@ -2,11 +2,9 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
-import { ReactComponent as Javascript } from '../assets/js-svgrepo-com.svg';
 import { ReactComponent as React } from '../assets/react.svg';
 import { ReactComponent as Redux } from '../assets/reduxNew.svg';
 import { ReactComponent as Node } from '../assets/node.svg';
-import { ReactComponent as Next } from '../assets/nextJs.svg';
 
 const Hero = () => (
   <section className={`${styles.paddings} sm:pl-16 pl-6`}>

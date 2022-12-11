@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from '../components';
 import { Hero, About, TechStack, Project, Blogs } from '../sections';
 
 const Home = () => {

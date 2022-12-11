@@ -1,7 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import { Home, Projects, Blogs, MainPage } from './routes';
-import client from '@sanity/client';
-import { useEffect } from 'react';
 
 function App() {
   return (
