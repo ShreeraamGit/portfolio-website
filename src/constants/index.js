@@ -94,6 +94,7 @@ export const socials = [
 export const techStack = [
   'Javascript ES6',
   'ReactJS',
+  'NextJS',
   'Redux',
   'React Router',
   'HTML5',
@@ -102,6 +103,7 @@ export const techStack = [
   'Styled Components',
   'Tailwind CSS',
   'Git',
+  'NPM',
 ];
 
 export const exploreProjects = [

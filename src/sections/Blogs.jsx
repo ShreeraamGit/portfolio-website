@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { TypingText, CustomLinks } from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
-import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
 import { Icon } from '@chakra-ui/react';
 
 const Blogs = () => (
@@ -31,7 +31,7 @@ const Blogs = () => (
       </motion.p>
       <CustomLinks
         title="View Blogs"
-        iconType=<Icon as={FaExternalLinkSquareAlt} w={30} h={30} />
+        iconType=<Icon as={FiExternalLink} w={30} h={30} />
         to="blogs"
         textStyles="font-fira"
       />
