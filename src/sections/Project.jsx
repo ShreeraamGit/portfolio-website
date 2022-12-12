@@ -17,7 +17,7 @@ const Project = () => {
       >
         <TypingText title="|  Portfolio" textStyles="text-center" />
         <motion.p
-          variants={fadeIn('up', 'tween', 0.2, 1)}
+          variants={fadeIn('up', 'tween', 0.4, 1)}
           className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
         >
           I like to stay busy and always have a{' '}
@@ -31,9 +31,10 @@ const Project = () => {
           I've dedicated my time to.
         </motion.p>
         <CustomLinks
-          title="View Projects"
+          title="View the Archive"
           iconType=<Icon as={FaExternalLinkSquareAlt} w={30} h={30} />
           to="projects"
+          textStyles="font-fira"
         />
       </motion.div>
     </section>

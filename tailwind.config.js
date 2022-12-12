@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        fira: ['Fira Code'],
+      },
       colors: {
         'primary-black': '#1A232E',
         'secondary-white': '#c7c7c7',

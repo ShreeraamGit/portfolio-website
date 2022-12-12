@@ -17,7 +17,7 @@ const Blogs = () => (
     >
       <TypingText title="|  Blogs" textStyles="text-center" />
       <motion.p
-        variants={fadeIn('up', 'tween', 0.5, 1)}
+        variants={fadeIn('up', 'tween', 0.4, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         Have you ever read a{' '}
@@ -33,6 +33,7 @@ const Blogs = () => (
         title="View Blogs"
         iconType=<Icon as={FaExternalLinkSquareAlt} w={30} h={30} />
         to="blogs"
+        textStyles="font-fira"
       />
     </motion.div>
   </section>
