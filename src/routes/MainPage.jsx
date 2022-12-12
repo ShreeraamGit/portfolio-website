@@ -15,7 +15,7 @@ const MainPage = () => {
     <main className="bg-primary-black overflow-hidden">
       <motion.div
         style={{ scaleX }}
-        className="fixed top-0 left-0 right-0 h-[10px] bg-red-600 origin-[0%]"
+        className="fixed top-0 left-0 right-0 h-[10px] bg-cyan-600 origin-[0%]"
       />
       <Navbar />
       <Suspense fallback={<div className="">Loading .....</div>}>
