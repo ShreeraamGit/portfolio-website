@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion';
-import { TypingText, CustomLinks } from '../components';
+import {
+  TypingText,
+  ProjectsTitleText,
+  CustomLinks,
+  ProjectsCard,
+} from '../components';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { FiExternalLink } from 'react-icons/fi';
@@ -30,6 +35,11 @@ const Project = () => {
           </span>
           I've dedicated my time to.
         </motion.p>
+        <ProjectsCard />
+        <ProjectsTitleText
+          title="Other NoteWorthy Projects"
+          textStyles="text-center"
+        />
         <CustomLinks
           title="View the Archive"
           iconType=<Icon as={FiExternalLink} w={30} h={30} />

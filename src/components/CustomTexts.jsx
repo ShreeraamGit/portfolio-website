@@ -45,3 +45,14 @@ export const BlogReadMoreTypingText = ({ title, textStyles }) => (
     ))}
   </motion.p>
 );
+
+export const ProjectsTitleText = ({ title, textStyles }) => (
+  <motion.h2
+    variants={textVariant(1.25)}
+    initial="hidden"
+    whileInView="show"
+    className={`mt-[8px] font-bold md:text-[32px] text-[20px] text-white ${textStyles}`}
+  >
+    {title}
+  </motion.h2>
+);

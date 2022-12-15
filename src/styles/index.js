@@ -1,13 +1,21 @@
 const styles = {
   innerWidth: '2xl:max-w-[1280px] w-full',
   interWidth: 'lg:w-[80%] w-[100%]',
-  images: 'h-[40px] lg:h-[60px]',
 
+  //IconsSize
+  icons:
+    'h-[40px] w-[40px] object-contain md:h-[45px] md:w-[45px] lg:h-[55px] lg:w-[55px] xl:h-[55px] xl:w-[55px]',
+
+  projectIcons:
+    'h-[40px] w-[40px] object-contain md:h-[50px] md:w-[50px] lg:h-[50px] lg:w-[50px]',
+
+  //paddings
   paddings: 'sm:p-16 xs:p-8 px-6 py-12',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
   xPaddings: 'sm:px-16 px-6',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
+  projectBoxPaddings: 'sm:p-5 xs:p-8 px-3',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',

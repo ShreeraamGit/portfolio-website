@@ -8,6 +8,7 @@ import { DiNpm } from 'react-icons/di';
 import { Icon } from '@chakra-ui/react';
 import styles from '../styles';
 import { slideIn, fadeIn } from '../utils/motion';
+import { useBreakpointValue } from '@chakra-ui/react';
 
 const SkillsIconAnimation = () => {
   return (
@@ -15,21 +16,21 @@ const SkillsIconAnimation = () => {
       variants={slideIn('left', 'tween', 1.5, 1)}
       className={`relative  w-full md:-mt-[20px] -mt-[12px] flex justify-center items-center ${styles.paddings}`}
     >
-      <div className="flex w-full lg:w-[40%] justify-evenly gap-2">
+      <div className="flex w-full lg:w-[40%] justify-evenly gap-4 md:gap-7 lg:gap-14">
         <motion.div variants={fadeIn('right', 'tween', 2, 0.5)}>
-          <Icon as={SiJavascript} boxSize={50} color="#F6E05E" />
+          <SiJavascript className={`${styles.icons} text-yellow-300`} />
         </motion.div>
         <motion.div variants={fadeIn('left', 'tween', 2.5, 0.5)}>
-          <Icon as={FaReact} boxSize={50} color="#76E4F7" />
+          <FaReact className={`${styles.icons} text-cyan-400`} />
         </motion.div>
         <motion.div variants={fadeIn('right', 'tween', 3, 0.5)}>
-          <Icon as={SiRedux} boxSize={50} color="#6B46C1" />
+          <SiRedux className={`${styles.icons} text-violet-500`} />
         </motion.div>
         <motion.div variants={fadeIn('left', 'tween', 3.5, 0.5)}>
-          <Icon as={SiNextdotjs} boxSize={50} color="#FFFFFF" />
+          <SiNextdotjs className={`${styles.icons} text-white`} />
         </motion.div>
         <motion.div variants={fadeIn('right', 'tween', 4, 0.5)}>
-          <Icon as={DiNpm} boxSize={50} color="#E53E3E" />
+          <DiNpm className={`${styles.icons} text-red-500`} />
         </motion.div>
       </div>
     </motion.div>
