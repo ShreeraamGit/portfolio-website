@@ -13,12 +13,12 @@ const ProjectsCard = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.paddings} ${styles.innerWidth} mx-auto gap-7 flex flex-col xl:flex-row  xl:items-center xl:flex-wrap`}
+      className={`${styles.paddings} ${styles.innerWidth} grid grid-cols-auto grid-auto-flow-row gap-5 md:gap-5 lg:gap-5 xl:gap-5 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3`}
     >
       {exploreProjects.map((items) => (
         <motion.div
           variants={slideIn('up', 'tween', 0.5, 1)}
-          className={`w-full border rounded-lg h-fit xl:h-[43rem] xl:w-[31.5%]`}
+          className={`col-span-1 sm:mb-5 border sm:min-w-full md:min-w-3/4 lg:min-w-1/2 xl:min-w-1/3 sm:min-h-40 md:min-h-48 lg:min-h-64 xl:min-h-80 rounded-xl hover:scale-110 hover:translate-x-5`}
         >
           <div
             className={`${styles.projectBoxPaddings} flex flex-col justify-center gap-6`}
@@ -28,7 +28,7 @@ const ProjectsCard = () => {
               <FiExternalLink className={`${styles.icons} text-white`} />
             </div>
             <div className="">
-              <p className="font-extrabold mb-5 text-white sm:text-[23px] text-[20px]">
+              <p className="font-bold mb-5 text-white sm:text-[23px] text-[15px]">
                 {items.title}
               </p>
               <p className="font-normal sm:text-[23px] text-[20px] text-secondary-white">

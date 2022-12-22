@@ -113,7 +113,7 @@ export const exploreProjects = [
     title: 'Metaverse Website',
     intro:
       'A strong focus on UI and UX helped to create a website that is not only visually appealing, but also intuitive and easy to use for visitors, which improved user satisfaction and engagement, and ultimately help drive more traffic and conversions for the site.',
-    techStack: ['TAILWIND CSS', 'NEXTJS', 'FRAMER MOTION'],
+    techStack: ['NEXTJS', 'FRAMER MOTION'],
   },
   {
     id: 'project-2',
