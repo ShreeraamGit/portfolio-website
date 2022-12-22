@@ -18,7 +18,7 @@ const ProjectsCard = () => {
       {exploreProjects.map((items) => (
         <motion.div
           variants={slideIn('up', 'tween', 0.5, 1)}
-          className={`col-span-1 sm:mb-5 border sm:min-w-full md:min-w-3/4 lg:min-w-1/2 xl:min-w-1/3 sm:min-h-40 md:min-h-48 lg:min-h-64 xl:min-h-80 rounded-xl hover:scale-110 hover:translate-x-5`}
+          className={`col-span-1 sm:mb-5 border sm:min-w-full md:min-w-3/4 lg:min-w-1/2 xl:min-w-1/3 sm:min-h-40 md:min-h-48 lg:min-h-64 xl:min-h-80 rounded-xl cursor-pointer sm:transform sm:scale-110 md:scale-115 lg:scale-120 xl:scale-125 duration-300`}
         >
           <div
             className={`${styles.projectBoxPaddings} flex flex-col justify-center gap-6`}
@@ -28,7 +28,7 @@ const ProjectsCard = () => {
               <FiExternalLink className={`${styles.icons} text-white`} />
             </div>
             <div className="">
-              <p className="font-bold mb-5 text-white sm:text-[23px] text-[15px]">
+              <p className="font-bold mb-5 text-white sm:text-[23px] text-[20px]">
                 {items.title}
               </p>
               <p className="font-normal sm:text-[23px] text-[20px] text-secondary-white">
