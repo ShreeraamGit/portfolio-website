@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
 import styles from '../styles';
 import { motion } from 'framer-motion';
-import { FaMoon } from 'react-icons/fa';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
 function FullScreenMenu({ isOpen, setIsMenuOpen }) {
   const [isRotated, setIsRotated] = useState(false);
@@ -20,7 +20,11 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
         isOpen ? '' : 'hidden'
       } fixed inset-0 z-50 bg-gray-900 bg-opacity-75`}
     >
-      <div
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
         className={`flex flex-col w-full max-w-full h-screen mx-auto py-6 bg-menu-color shadow-xl text-[25px] lg:text-[40px] ${styles.xPaddings} py-8 relative `}
       >
         <div className="flex justify-end items-center ">
@@ -33,7 +37,10 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
           </motion.div>
         </div>
 
-        <div className="mx-auto flex flex-col justify-center items-center gap-16 lg:gap-20 mt-[11rem]">
+        <motion.div
+          variants={fadeIn('up', 'tween', 0.4, 1)}
+          className="mx-auto flex flex-col justify-center items-center gap-16 lg:gap-20 mt-[11rem]"
+        >
           <Link
             onClick={handleMenuClose}
             className="underline underline-offset-8"
@@ -62,8 +69,8 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
           >
             {'resume'.toUpperCase()}
           </Link>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
