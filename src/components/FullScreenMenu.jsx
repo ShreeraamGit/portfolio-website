@@ -38,7 +38,7 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
         </div>
 
         <motion.div
-          variants={fadeIn('up', 'tween', 0.4, 1)}
+          variants={fadeIn('up', 'tween', 0.5, 1)}
           className="mx-auto flex flex-col justify-center items-center gap-16 lg:gap-20 mt-[11rem]"
         >
           <Link
@@ -76,32 +76,3 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
 }
 
 export default FullScreenMenu;
-
-/*<Link
-          onClick={handleMenuClose}
-          className="underline underline-offset-8"
-          to="/"
-        >
-          {'home'.toUpperCase()}
-        </Link>
-        <Link
-          className="underline underline-offset-8"
-          onClick={handleMenuClose}
-          to="projects"
-        >
-          {'projects'.toUpperCase()}
-        </Link>
-        <Link
-          className="underline underline-offset-8"
-          onClick={handleMenuClose}
-          to="blogs"
-        >
-          {'blogs'.toUpperCase()}
-        </Link>
-        <Link
-          className="underline underline-offset-8"
-          onClick={handleMenuClose}
-          to="/"
-        >
-          {'resume'.toUpperCase()}
-        </Link>*/

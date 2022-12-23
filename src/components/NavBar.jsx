@@ -8,7 +8,7 @@ import { ReactComponent as Menu } from '../assets/menu.svg';
 
 const Navbar = () => {
   let homePage = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleButtonClick = (e) => {
     e.preventDefault();
