@@ -1,0 +1,19 @@
+.menu {
+  /* Position the menu off screen when it is closed */
+  transform: translateX(-100%);
+  /* Make the menu full screen when it is open */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* Other styles for the menu */
+  background-color: white;
+  z-index: 2;
+  /* Use a transition to smoothly animate the menu opening and closing */
+  transition: transform 0.3s ease-out;
+}
+
+/* When the isMenuOpen prop is true, apply the open class to the menu */
+.menu.open {
+  transform: translateX(0);
+}

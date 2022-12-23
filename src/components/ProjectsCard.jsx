@@ -17,8 +17,9 @@ const ProjectsCard = () => {
     >
       {exploreProjects.map((items) => (
         <motion.div
+          key={items.title}
           variants={slideIn('up', 'tween', 0.5, 1)}
-          className={`col-span-1 sm:mb-5 border sm:min-w-full md:min-w-3/4 lg:min-w-1/2 xl:min-w-1/3 sm:min-h-40 md:min-h-48 lg:min-h-64 xl:min-h-80 rounded-xl cursor-pointer sm:transform sm:scale-110 md:scale-115 lg:scale-120 xl:scale-125 duration-300`}
+          className={`col-span-1 sm:mb-5 border sm:min-w-full md:min-w-3/4 lg:min-w-1/2 xl:min-w-1/3 sm:min-h-40 md:min-h-48 lg:min-h-64 xl:min-h-80 rounded-xl cursor-pointer`}
         >
           <div
             className={`${styles.projectBoxPaddings} flex flex-col justify-center gap-6`}
@@ -39,7 +40,9 @@ const ProjectsCard = () => {
               className={`flex gap-5 flex-wrap text-secondary-white ${styles.bottomPaddings}`}
             >
               {items.techStack.map((items) => (
-                <li className="border p-2 w-fit rounded-lg">{items}</li>
+                <li key={items} className="border p-2 w-fit rounded-lg">
+                  {items}
+                </li>
               ))}
             </ul>
           </div>

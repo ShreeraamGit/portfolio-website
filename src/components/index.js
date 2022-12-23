@@ -10,6 +10,7 @@ import CustomLinks from './CustomLinks';
 import Blogcard from './Blogcard';
 import SkillsIconAnimation from './SkillsIconAnimation';
 import ProjectsCard from './ProjectsCard';
+import FullScreenMenu from './FullScreenMenu';
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Blogcard,
   SkillsIconAnimation,
   ProjectsCard,
+  FullScreenMenu,
 };
