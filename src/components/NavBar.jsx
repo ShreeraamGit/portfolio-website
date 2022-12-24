@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const handleMenuToggle = () => {
-    setIsMenuOpen(true);
+    setIsMenuOpen((prev) => !prev);
   };
 
   return (
@@ -26,7 +26,7 @@ const Navbar = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className={`${styles.xPaddings} py-8 relative  text-white`}
+        className={`${styles.xPaddings} relative py-8 text-white`}
       >
         <div className="absolute w-[50%] inset-0 gradient-01" />
         <div
@@ -42,7 +42,7 @@ const Navbar = () => {
               SHREERAAM.DEV
             </h2>
           </button>
-          <Menu onClick={handleMenuToggle} />
+          <Menu className="" onClick={handleMenuToggle} />
         </div>
       </motion.nav>
       <FullScreenMenu setIsMenuOpen={setIsMenuOpen} isOpen={isMenuOpen} />
