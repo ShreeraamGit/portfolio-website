@@ -39,7 +39,7 @@ function FullScreenMenu({ isOpen, setIsMenuOpen }) {
 
         <motion.div
           variants={fadeIn('up', 'tween', 0.5, 1)}
-          className="mx-auto flex flex-col justify-center items-center gap-16 lg:gap-20 mt-[11rem]"
+          className="mx-auto flex flex-col justify-center items-center gap-16 lg:gap-20 mt-[6rem] lg:mt-[9rem] 2xl:mt-[11rem]"
         >
           <Link
             onClick={handleMenuClose}
