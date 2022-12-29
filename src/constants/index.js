@@ -112,14 +112,14 @@ export const exploreProjects = [
     imgUrl: Metaverse,
     title: 'Metaverse Website',
     intro:
-      'A strong focus on UI and UX helped to create a website that is not only visually appealing, but also intuitive and easy to use for visitors, which improved user satisfaction and engagement, and ultimately help drive more traffic and conversions for the site.',
+      'Create mesmerizing, device-agnostic websites with responsive design and UI/UX. This project covers the tools and techniques to make your sites stand out and deliver an unforgettable user experience. Join me and elevate your web design skills.',
     techStack: ['NEXTJS', 'FRAMER MOTION'],
   },
   {
     id: 'project-2',
     imgUrl: Mollify,
     intro:
-      'A strong focus on UI and UX helped to create a website that is not only visually appealing, but also intuitive and easy to use for visitors, which improved user satisfaction and engagement, and ultimately help drive more traffic and conversions for the site.',
+      '"Welcome to Mollify - the one-stop solution for all your project management needs. Our single page application offers a sleek and intuitive interface for organizing your projects, budget, and events. Streamline your workflow and increase productivity with Mollify Application.',
     title: 'The Mollify App',
     techStack: ['REACTJS', 'REDUX'],
   },

@@ -13,7 +13,7 @@ const ProjectsCard = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.paddings} ${styles.innerWidth} grid grid-cols-auto grid-auto-flow-row gap-5 md:gap-5 lg:gap-5 xl:gap-5 sm:grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3`}
+      className={`${styles.paddings} ${styles.innerWidth} grid grid-cols-auto grid-auto-flow-row gap-5 md:gap-5 lg:gap-5 xl:gap-5 sm:grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3`}
     >
       {exploreProjects.map((items) => (
         <motion.div

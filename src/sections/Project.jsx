@@ -43,7 +43,7 @@ const Project = () => {
         <CustomLinks
           title="View the Archive"
           iconType=<Icon as={FiExternalLink} w={30} h={30} />
-          to="projects"
+          to="/"
           textStyles="font-fira"
         />
       </motion.div>
